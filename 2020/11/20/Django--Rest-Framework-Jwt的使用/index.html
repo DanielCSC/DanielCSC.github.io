@@ -15,9 +15,9 @@
   <meta http-equiv="Cache-Control" content="no-siteapp">
 
 
-<link rel="alternate" type="application/rss+xml" title="云雾散尽 我爱你人尽皆知" href="https://github.com/DanielCSC/DanielCSC.github.io.git/rss.xml" />
-<link rel="alternate" type="application/atom+xml" title="云雾散尽 我爱你人尽皆知" href="https://github.com/DanielCSC/DanielCSC.github.io.git/atom.xml" />
-<link rel="alternate" type="application/json" title="云雾散尽 我爱你人尽皆知" href="https://github.com/DanielCSC/DanielCSC.github.io.git/feed.json" />
+<link rel="alternate" type="application/rss+xml" title="云雾散尽 我爱你人尽皆知" href="https://mfx.icu/rss.xml" />
+<link rel="alternate" type="application/atom+xml" title="云雾散尽 我爱你人尽皆知" href="https://mfx.icu/atom.xml" />
+<link rel="alternate" type="application/json" title="云雾散尽 我爱你人尽皆知" href="https://mfx.icu/feed.json" />
 
 <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext">
 
@@ -27,7 +27,7 @@
   <meta name="keywords" content="JWT" />
 
 
-<link rel="canonical" href="https://github.com/DanielCSC/DanielCSC.github.io.git/2020/11/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/">
+<link rel="canonical" href="https://mfx.icu/2020/11/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
 
 
@@ -102,12 +102,12 @@ Django--Rest-Framework-Jwt的使用 - django |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicljitigmj20zk0m87fp.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipeybxm1pj20zk0m8niv.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gipewf5l51j20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
-          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicli3sbvtj20zk0m8x6p.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclhpw3lwj20zk0m8gvw.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giclga70tsj20zk0m84mr.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1giph4fomxoj20zk0m8axp.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></li>
+          <li class="item" data-background-image="https://tva2.sinaimg.cn/large/6833939bly1gicit31ffoj20zk0m8naf.jpg"></li>
         </ul>
       </div>
     </header>
@@ -138,7 +138,7 @@ Django--Rest-Framework-Jwt的使用 - django |
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN">
-  <link itemprop="mainEntityOfPage" href="https://github.com/DanielCSC/DanielCSC.github.io.git/2020/11/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/">
+  <link itemprop="mainEntityOfPage" href="https://mfx.icu/2020/11/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -158,12 +158,7 @@ Django--Rest-Framework-Jwt的使用 - django |
 <li>安装 JWT</li>
 </ul>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre>pip install djangorestframework<span class="token operator">-</span>jwt<span class="token operator">==</span><span class="token number">1.11</span><span class="token number">.0</span></pre></td></tr></table></figure><ul>
-<li>
-<p><a target="_blank" rel="noopener" href="https://mengfanxing.gitee.io/blog/2020/11/12/JWT">了解 JWT 原理狠狠戳我😊</a></p>
-</li>
-<li>
-<p>在 <code>settings.py</code>  配置 jwt 载荷中的有效期设置</p>
-</li>
+<li>在 <code>settings.py</code>  配置 jwt 载荷中的有效期设置</li>
 </ul>
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token comment"># jwt 载荷中的有效期设置</span></pre></td></tr><tr><td data-num="2"></td><td><pre>JWT_AUTH <span class="token operator">=</span> <span class="token punctuation">&#123;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>    <span class="token comment"># 1.token 前缀：headers 中 Authorization 值的前缀</span></pre></td></tr><tr><td data-num="4"></td><td><pre>    <span class="token string">'JWT_AUTH_HEADER_PREFIX'</span><span class="token punctuation">:</span> <span class="token string">'JWT'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="5"></td><td><pre>    <span class="token comment"># 2.token 有效期：一天有效</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    <span class="token string">'JWT_EXPIRATION_DELTA'</span><span class="token punctuation">:</span> datetime<span class="token punctuation">.</span>timedelta<span class="token punctuation">(</span>days<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre>    <span class="token comment"># 3. 刷新 token：允许使用旧的 token 换新 token</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    <span class="token string">'JWT_ALLOW_REFRESH'</span><span class="token punctuation">:</span> <span class="token boolean">True</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre>    <span class="token comment"># 4.token 有效期：token 在 24 小时内过期，可续期 token</span></pre></td></tr><tr><td data-num="10"></td><td><pre>    <span class="token string">'JWT_REFRESH_EXPIRATION_DELTA'</span><span class="token punctuation">:</span> datetime<span class="token punctuation">.</span>timedelta<span class="token punctuation">(</span>hours<span class="token operator">=</span><span class="token number">24</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="11"></td><td><pre>    <span class="token comment"># 5. 自定义 JWT 载荷信息：自定义返回格式，需要手工创建</span></pre></td></tr><tr><td data-num="12"></td><td><pre>    <span class="token string">'JWT_RESPONSE_PAYLOAD_HANDLER'</span><span class="token punctuation">:</span> <span class="token string">'app01.views.jwt_response_payload_handler'</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token punctuation">&#125;</span></pre></td></tr></table></figure><ul>
 <li>在 <code>settings.py</code>  配置默认的认证方式</li>
@@ -196,7 +191,7 @@ Django--Rest-Framework-Jwt的使用 - django |
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">from</span> app01 <span class="token keyword">import</span> views</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">from</span> rest_framework_jwt<span class="token punctuation">.</span>views <span class="token keyword">import</span> obtain_jwt_token</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'register/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">]</span></pre></td></tr></table></figure><ul>
 <li>Postman 测试</li>
 </ul>
-<p><img data-src="1.png" alt></p>
+<p><img data-src="1.png" alt=""></p>
 <h3 id="6登录及多形式登录"><a class="markdownIt-Anchor" href="#6登录及多形式登录">#</a> 6. 登录及多形式登录</h3>
 <ul>
 <li><code>views.py</code></li>
@@ -207,11 +202,11 @@ Django--Rest-Framework-Jwt的使用 - django |
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">from</span> app01 <span class="token keyword">import</span> views</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">from</span> rest_framework_jwt<span class="token punctuation">.</span>views <span class="token keyword">import</span> obtain_jwt_token</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'register/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  </pre></td></tr><tr><td data-num="7"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'login/'</span><span class="token punctuation">,</span> obtain_jwt_token<span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">]</span></pre></td></tr></table></figure><ul>
 <li>Postman 测试登录</li>
 </ul>
-<p><img data-src="2.png" alt></p>
+<p><img data-src="2.png" alt=""></p>
 <ul>
 <li>Postman 测试多形式登录</li>
 </ul>
-<p><img data-src="3.png" alt></p>
+<p><img data-src="3.png" alt=""></p>
 <h3 id="7携带token访问所有用户"><a class="markdownIt-Anchor" href="#7携带token访问所有用户">#</a> 7. 携带 token 访问所有用户</h3>
 <ul>
 <li><code>serializers.py</code></li>
@@ -225,7 +220,7 @@ Django--Rest-Framework-Jwt的使用 - django |
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">from</span> app01 <span class="token keyword">import</span> views</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">from</span> rest_framework_jwt<span class="token punctuation">.</span>views <span class="token keyword">import</span> obtain_jwt_token</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'register/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> </pre></td></tr><tr><td data-num="7"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'login/'</span><span class="token punctuation">,</span> obtain_jwt_token<span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'get_user/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserInfoView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">]</span></pre></td></tr></table></figure><ul>
 <li>Postman 测试</li>
 </ul>
-<p><img data-src="4.png" alt></p>
+<p><img data-src="4.png" alt=""></p>
 
       <div class="tags">
           <a href="/tags/JWT/" rel="tag"><i class="ic i-tag"></i> JWT</a>
@@ -240,7 +235,7 @@ Django--Rest-Framework-Jwt的使用 - django |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2020-12-10 21:28:01" itemprop="dateModified" datetime="2020-12-10T21:28:01+08:00">2020-12-10</time>
+    <time title="修改时间：2020-12-12 11:08:08" itemprop="dateModified" datetime="2020-12-12T11:08:08+08:00">2020-12-12</time>
   </span>
 </div>
 
@@ -271,7 +266,7 @@ Django--Rest-Framework-Jwt的使用 - django |
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://github.com/DanielCSC/DanielCSC.github.io.git/2020/11/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/" title="Django--Rest-Framework-Jwt的使用">https://github.com/DanielCSC/DanielCSC.github.io.git/2020/11/20/Django--Rest-Framework-Jwt的使用/</a>
+    <a href="https://mfx.icu/2020/11/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/" title="Django--Rest-Framework-Jwt的使用">https://mfx.icu/2020/11/20/Django--Rest-Framework-Jwt的使用/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -290,7 +285,7 @@ Django--Rest-Framework-Jwt的使用 - django |
     <div class="item left">
       
 
-  <a href="/2020/11/12/JWT/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclga70tsj20zk0m84mr.jpg" title="JWT--JSON WEB TOKEN">
+  <a href="/2020/11/12/JWT/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1giclhpw3lwj20zk0m8gvw.jpg" title="JWT--JSON WEB TOKEN">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> JWT</span>
   <h3>JWT--JSON WEB TOKEN</h3>
@@ -300,7 +295,7 @@ Django--Rest-Framework-Jwt的使用 - django |
     <div class="item right">
       
 
-  <a href="/2020/11/24/Vue-%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%90%8C%E5%B0%8F%E5%BC%82%E7%9A%84UI%E7%BB%84%E4%BB%B6/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gicm0n457cj20zk0m8e81.jpg" title="Vue--使用UI组件">
+  <a href="/2020/11/24/Vue-%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%90%8C%E5%B0%8F%E5%BC%82%E7%9A%84UI%E7%BB%84%E4%BB%B6/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;tva2.sinaimg.cn&#x2F;mw690&#x2F;6833939bly1gipesng5oej20zk0m87d4.jpg" title="Vue--使用UI组件">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>Vue--使用UI组件</h3>
@@ -431,7 +426,7 @@ Django--Rest-Framework-Jwt的使用 - django |
     <span class="author" itemprop="copyrightHolder">Danile ✨ @ 星が優しくあふれている</span>
   </div>
   <div class="powered-by">
-    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<a href="https://github.com/amehime/hexo-theme-shoka">Shoka</a>
+    基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
   </div>
 </div>
 

@@ -2,7 +2,7 @@
 <rss version="2.0">
     <channel>
         <title>云雾散尽 我爱你人尽皆知 • Posts by &#34;redis&#34; category</title>
-        <link>https://github.com/DanielCSC/DanielCSC.github.io.git</link>
+        <link>https://mfx.icu</link>
         <description>人生海海  山山而川  不过尔尔</description>
         <language>zh-CN</language>
         <pubDate>Thu, 26 Nov 2020 11:24:42 +0800</pubDate>
@@ -19,9 +19,9 @@
         <category>UI组件</category>
         <category>生产环境部署</category>
         <item>
-            <guid isPermalink="true">https://github.com/DanielCSC/DanielCSC.github.io.git/2020/11/26/Redis/</guid>
+            <guid isPermalink="true">https://mfx.icu/2020/11/26/Redis/</guid>
             <title>初步了解--Redis</title>
-            <link>https://github.com/DanielCSC/DanielCSC.github.io.git/2020/11/26/Redis/</link>
+            <link>https://mfx.icu/2020/11/26/Redis/</link>
             <category>redis</category>
             <pubDate>Thu, 26 Nov 2020 11:24:42 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;redisremote-dictionary-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#redisremote-dictionary-server&#34;&gt;#&lt;/a&gt; Redis（Remote Dictionary Server )&lt;/h1&gt;
