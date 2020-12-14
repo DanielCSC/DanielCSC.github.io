@@ -15,6 +15,7 @@
     <category term="vue生命周期" />
     <category term="UI组件" />
     <category term="生产环境部署" />
+    <category term="Docker" />
     <entry>
         <id>https://mfx.icu/2020/11/07/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</id>
         <title>Django--数据库ORM操作</title>
