@@ -16,6 +16,7 @@
     <category term="UI组件" />
     <category term="生产环境部署" />
     <category term="Docker" />
+    <category term="Docker_Desktop" />
     <entry>
         <id>https://mfx.icu/2020/11/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
         <title>Django--Rest-Framework-Jwt的使用</title>

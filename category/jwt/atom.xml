@@ -16,6 +16,7 @@
     <category term="UI组件" />
     <category term="生产环境部署" />
     <category term="Docker" />
+    <category term="Docker_Desktop" />
     <entry>
         <id>https://mfx.icu/2020/11/12/JWT/</id>
         <title>JWT--JSON WEB TOKEN</title>
