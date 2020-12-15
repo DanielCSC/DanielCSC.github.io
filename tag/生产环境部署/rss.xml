@@ -67,7 +67,7 @@
 &lt;/blockquote&gt;
 &lt;h2 id=&#34;django-uwsgi-nginx-部署的作用&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#django-uwsgi-nginx-部署的作用&#34;&gt;#&lt;/a&gt; Django + Uwsgi + Nginx 部署的作用&lt;/h2&gt;
 &lt;h3 id=&#34;django-uwsgi-nginx方案&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#django-uwsgi-nginx方案&#34;&gt;#&lt;/a&gt; Django + Uwsgi + Nginx 方案&lt;/h3&gt;
-&lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h4 id=&#34;请求处理整体流程&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#请求处理整体流程&#34;&gt;#&lt;/a&gt; 请求处理整体流程&lt;/h4&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;code&gt;nginx&lt;/code&gt;  接收到浏览器发送过来的 &lt;code&gt;http请求&lt;/code&gt; ，将包进行解析，分析 url&lt;/li&gt;

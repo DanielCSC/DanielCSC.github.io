@@ -5,8 +5,8 @@
         <link>https://mfx.icu</link>
         <description>人生海海  山山而川  不过尔尔</description>
         <language>zh-CN</language>
-        <pubDate>Sat, 07 Nov 2020 20:10:28 +0800</pubDate>
-        <lastBuildDate>Sat, 07 Nov 2020 20:10:28 +0800</lastBuildDate>
+        <pubDate>Tue, 10 Mar 2020 20:10:28 +0800</pubDate>
+        <lastBuildDate>Tue, 10 Mar 2020 20:10:28 +0800</lastBuildDate>
         <category>SQL</category>
         <category>JWT</category>
         <category>Celery</category>
@@ -21,11 +21,11 @@
         <category>Docker</category>
         <category>Docker_Desktop</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/11/07/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</guid>
+            <guid isPermalink="true">https://mfx.icu/2020/03/10/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</guid>
             <title>Django--序列化器</title>
-            <link>https://mfx.icu/2020/11/07/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</link>
+            <link>https://mfx.icu/2020/03/10/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</link>
             <category>序列化器</category>
-            <pubDate>Sat, 07 Nov 2020 20:10:28 +0800</pubDate>
+            <pubDate>Tue, 10 Mar 2020 20:10:28 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;1-序列化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-序列化&#34;&gt;#&lt;/a&gt; 1. 序列化&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;DRF 的核心 就是 前后端分离的核心&lt;/p&gt;

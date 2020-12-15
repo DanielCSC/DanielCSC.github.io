@@ -5,8 +5,8 @@
         <link>https://mfx.icu</link>
         <description>人生海海  山山而川  不过尔尔</description>
         <language>zh-CN</language>
-        <pubDate>Sun, 08 Nov 2020 10:40:53 +0800</pubDate>
-        <lastBuildDate>Sun, 08 Nov 2020 10:40:53 +0800</lastBuildDate>
+        <pubDate>Wed, 08 Apr 2020 10:40:53 +0800</pubDate>
+        <lastBuildDate>Wed, 08 Apr 2020 10:40:53 +0800</lastBuildDate>
         <category>SQL</category>
         <category>JWT</category>
         <category>Celery</category>
@@ -21,11 +21,11 @@
         <category>Docker</category>
         <category>Docker_Desktop</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/11/08/OAuth2-0%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%8E%88%E6%9D%83%E6%A8%A1%E5%BC%8F/</guid>
+            <guid isPermalink="true">https://mfx.icu/2020/04/08/OAuth2-0%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%8E%88%E6%9D%83%E6%A8%A1%E5%BC%8F/</guid>
             <title>OAuth2.0的四种授权模式</title>
-            <link>https://mfx.icu/2020/11/08/OAuth2-0%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%8E%88%E6%9D%83%E6%A8%A1%E5%BC%8F/</link>
+            <link>https://mfx.icu/2020/04/08/OAuth2-0%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%8E%88%E6%9D%83%E6%A8%A1%E5%BC%8F/</link>
             <category>OAuth2.0</category>
-            <pubDate>Sun, 08 Nov 2020 10:40:53 +0800</pubDate>
+            <pubDate>Wed, 08 Apr 2020 10:40:53 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;oauth20-为何物&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#oauth20-为何物&#34;&gt;#&lt;/a&gt; &lt;strong&gt;OAuth2.0 为何物&lt;/strong&gt;&lt;/h1&gt;
 &lt;p&gt;&lt;code&gt;OAuth&lt;/code&gt;  简单理解就是一种授权机制，它是在客户端和资源所有者之间的授权层，用来分离两种不同的角色。在资源所有者同意并向客户端颁发令牌后，客户端携带令牌可以访问资源所有者的资源。&lt;br&gt;
  &lt;code&gt;OAuth2.0&lt;/code&gt;  是 &lt;code&gt;OAuth&lt;/code&gt;  协议的一个版本，有 &lt;code&gt;2.0&lt;/code&gt;  版本那就有 &lt;code&gt;1.0&lt;/code&gt;  版本，有意思的是 &lt;code&gt;OAuth2.0&lt;/code&gt;  却不向下兼容 &lt;code&gt;OAuth1.0&lt;/code&gt;  ，相当于废弃了 &lt;code&gt;1.0&lt;/code&gt;  版本。&lt;/p&gt;
@@ -53,16 +53,16 @@
 &lt;/ul&gt;
 &lt;hr&gt;
 &lt;h1 id=&#34;1隐式授权模式implicit-grant&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1隐式授权模式implicit-grant&#34;&gt;#&lt;/a&gt; 1. 隐式授权模式（Implicit Grant）&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第一步：用户访问页面时，重定向到认证服务器。&lt;/li&gt;
 &lt;li&gt;第二步：认证服务器给用户一个认证页面，等待用户授权。&lt;/li&gt;
 &lt;li&gt;第三步：用户授权，认证服务器想应用页面返回 Token&lt;/li&gt;
 &lt;li&gt;第四步：验证 Token，访问真正的资源页面&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;2.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;2授权码授权模式authorization-code-grant&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#2授权码授权模式authorization-code-grant&#34;&gt;#&lt;/a&gt; 2. 授权码授权模式（Authorization code Grant）&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;3.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第一步：用户访问页面&lt;/li&gt;
 &lt;li&gt;第二步：访问的页面将请求重定向到认证服务器&lt;/li&gt;
@@ -72,9 +72,9 @@
 &lt;li&gt;第六步：将 access_token 和 refresh_token 传给应用服务器&lt;/li&gt;
 &lt;li&gt;第七步：验证 token，访问真正的资源页面&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;&lt;img data-src=&#34;4.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;h1 id=&#34;3密码模式resource-owner-password-credentials-grant&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#3密码模式resource-owner-password-credentials-grant&#34;&gt;#&lt;/a&gt; 3. 密码模式（Resource Owner Password Credentials Grant）&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;5.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第一步：用户访问用页面时，输入第三方认证所需要的信息 (QQ / 微信账号密码)&lt;/li&gt;
 &lt;li&gt;第二步：应用页面那种这个信息去认证服务器授权&lt;/li&gt;
@@ -84,7 +84,7 @@
 &lt;p&gt;&lt;code&gt;缺点&lt;/code&gt; ：局限性，认证服务器和应用方必须有超高的信赖。(比如亲兄弟？)&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;应用场景&lt;/code&gt; ：自家公司搭建的认证服务器&lt;/p&gt;
 &lt;h1 id=&#34;4客户端凭证模式client-credentials-grant&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#4客户端凭证模式client-credentials-grant&#34;&gt;#&lt;/a&gt; 4. 客户端凭证模式（Client Credentials Grant）&lt;/h1&gt;
-&lt;p&gt;&lt;img data-src=&#34;6.png&#34; alt&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;第一步：用户访问应用客户端&lt;/li&gt;
 &lt;li&gt;第二步：通过客户端定义的验证方法，拿到 token，无需授权&lt;/li&gt;
