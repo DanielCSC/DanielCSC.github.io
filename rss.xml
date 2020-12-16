@@ -65,7 +65,7 @@
 &lt;p&gt;在循环引用对象的回收中，整个应用程序会被暂停，为了减少应用程序暂停的时间，Python 通过 &lt;code&gt;分代回收(Generational Collection)&lt;/code&gt;  以 &lt;code&gt;空间&lt;/code&gt; 换 &lt;code&gt;时间&lt;/code&gt; 的方法提高垃圾回收效率。&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;p&gt;分代回收是基于这样的一个统计事实，&lt;strong&gt;对于程序，存在一定比例的内存块的生存周期比较短；而剩下的内存块，生存周期会比较长，甚至会从程序开始一直持续到程序结束。生存期较短对象的比例通常在 80%～90% 之间，这种思想简单点说就是：对象存在时间越长，越可能不是垃圾，应该越少去收集。这样在执行标记 - 清除算法时可以有效减小遍历的对象数，从而提高垃圾回收的速度。&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;python gc&lt;/code&gt;  给对象定义了三种世代 (0,1,2), 每一个新生对象在 &lt;code&gt;generation zero&lt;/code&gt;  中，如果它在一轮 &lt;code&gt;gc&lt;/code&gt;  扫描中活了下来，那么它将被移至 &lt;code&gt;generation one&lt;/code&gt; , 在那里他将较少的被扫描，如果它又活过了一轮 gc &lt;code&gt;,它又将被移至&lt;/code&gt;  generation two`，在那里它被扫描的次数将会更少。&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;python gc&lt;/code&gt;  给对象定义了三种世代 (0,1,2), 每一个新生对象在 &lt;code&gt;generation zero&lt;/code&gt;  中，如果它在一轮 &lt;code&gt;gc&lt;/code&gt;  扫描中活了下来，那么它将被移至 &lt;code&gt;generation one&lt;/code&gt; , 在那里他将较少的被扫描，如果它又活过了一轮 gc, 它又将被移至 &lt;code&gt;generation two&lt;/code&gt; ，在那里它被扫描的次数将会更少。&lt;/p&gt;
  ]]></description>
         </item>
         <item>
