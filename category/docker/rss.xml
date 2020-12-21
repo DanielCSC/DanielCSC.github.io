@@ -20,6 +20,7 @@
         <category>生产环境部署</category>
         <category>Docker</category>
         <category>Docker_Desktop</category>
+        <category>Git</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</guid>
             <title>Docker_Desktop使用Mysql、Redis</title>

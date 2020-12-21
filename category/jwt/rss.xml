@@ -20,6 +20,7 @@
         <category>生产环境部署</category>
         <category>Docker</category>
         <category>Docker_Desktop</category>
+        <category>Git</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/04/12/JWT/</guid>
             <title>JWT--JSON WEB TOKEN</title>

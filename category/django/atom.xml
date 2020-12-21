@@ -17,6 +17,7 @@
     <category term="生产环境部署" />
     <category term="Docker" />
     <category term="Docker_Desktop" />
+    <category term="Git" />
     <entry>
         <id>https://mfx.icu/2020/12/04/Django-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</id>
         <title>Django + Uwsgi + Nginx 的生产环境部署</title>

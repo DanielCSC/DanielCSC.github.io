@@ -17,6 +17,7 @@
     <category term="生产环境部署" />
     <category term="Docker" />
     <category term="Docker_Desktop" />
+    <category term="Git" />
     <entry>
         <id>https://mfx.icu/2020/10/05/Redis/</id>
         <title>初步了解--Redis</title>

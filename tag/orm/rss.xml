@@ -20,6 +20,7 @@
         <category>生产环境部署</category>
         <category>Docker</category>
         <category>Docker_Desktop</category>
+        <category>Git</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/02/15/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</guid>
             <title>Django--数据库ORM操作</title>
