@@ -18,6 +18,7 @@
     <category term="Docker" />
     <category term="Docker_Desktop" />
     <category term="Git" />
+    <category term="数据可视化库" />
     <entry>
         <id>https://mfx.icu/2020/08/24/Vue-%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%90%8C%E5%B0%8F%E5%BC%82%E7%9A%84UI%E7%BB%84%E4%BB%B6/</id>
         <title>Vue--使用UI组件</title>

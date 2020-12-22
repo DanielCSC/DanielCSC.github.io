@@ -21,6 +21,7 @@
         <category>Docker</category>
         <category>Docker_Desktop</category>
         <category>Git</category>
+        <category>数据可视化库</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/10/05/Redis/</guid>
             <title>初步了解--Redis</title>

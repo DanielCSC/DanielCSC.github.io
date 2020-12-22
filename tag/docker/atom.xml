@@ -18,6 +18,7 @@
     <category term="Docker" />
     <category term="Docker_Desktop" />
     <category term="Git" />
+    <category term="数据可视化库" />
     <entry>
         <id>https://mfx.icu/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
         <title>Ubuntu安装Docker和docker的使用</title>

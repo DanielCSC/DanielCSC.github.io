@@ -18,6 +18,7 @@
     <category term="Docker" />
     <category term="Docker_Desktop" />
     <category term="Git" />
+    <category term="数据可视化库" />
     <entry>
         <id>https://mfx.icu/2020/04/12/JWT/</id>
         <title>JWT--JSON WEB TOKEN</title>
