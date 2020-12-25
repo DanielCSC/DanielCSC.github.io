@@ -1,0 +1,87 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mfx.icu</id>
+    <title>The course of true love never did run smooth. • Posts by &#34;mysql&#34; tag</title>
+    <link href="https://mfx.icu" />
+    <updated>2020-10-22T12:33:56.000Z</updated>
+    <category term="SQL" />
+    <category term="JWT" />
+    <category term="Celery" />
+    <category term="序列化器" />
+    <category term="ORM" />
+    <category term="OAuth2.0" />
+    <category term="jwt" />
+    <category term="redis" />
+    <category term="vue生命周期" />
+    <category term="UI组件" />
+    <category term="生产环境部署" />
+    <category term="Docker" />
+    <category term="Docker_Desktop" />
+    <category term="Git" />
+    <category term="数据可视化库" />
+    <category term="WebSocket" />
+    <category term="Navicat" />
+    <category term="Mysql" />
+    <entry>
+        <id>https://mfx.icu/2020/10/22/Mysql-%E5%AE%89%E8%A3%85/</id>
+        <title>Windows安装--Mysql</title>
+        <link rel="alternate" href="https://mfx.icu/2020/10/22/Mysql-%E5%AE%89%E8%A3%85/"/>
+        <content type="html">&lt;h1 id=&#34;下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载&#34;&gt;#&lt;/a&gt; 下载&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;点击&lt;a href=&#34;%5Bhttp://www.mysql.com%5D(http://www.mysql.com/)&#34;&gt;这里&lt;/a&gt;，去往 Mysql 官网下载&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMTBSV0Rvb01vR1NkU2g4bUdibTI3amc=&#34;&gt;戳我&lt;/span&gt;，前往网盘下载，版本为 &lt;code&gt;8.0.22.0&lt;/code&gt; ，&lt;span class=&#34;label primary&#34;&gt;提取码&lt;/span&gt;：ad3l&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;打开刚刚下载好的安装包，开始安装 MySQL&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;选择 &lt;code&gt; I accept&lt;/code&gt;  然后点击 &lt;code&gt;next&lt;/code&gt;  进入下一步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;这里选择 &lt;code&gt;Developer Default&lt;/code&gt; ，然后点击 &lt;code&gt;nex&lt;/code&gt; t 进入下一步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;这一步是检查安装条件，直接点击 &lt;code&gt;next&lt;/code&gt;  进入下一步就可以了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;这里直接点击 &lt;code&gt;execute&lt;/code&gt;  执行就可以了，执行完后点击 &lt;code&gt;next&lt;/code&gt;  进入下一步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;5&#34;&gt;
+&lt;li&gt;继续点击 &lt;code&gt;next&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;6&#34;&gt;
+&lt;li&gt;设置 &lt;code&gt;root密码&lt;/code&gt; 然后点击 &lt;code&gt;next&lt;/code&gt;  进入下一步。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;7&#34;&gt;
+&lt;li&gt;一路点击 &lt;code&gt;nex&lt;/code&gt; t，并 &lt;code&gt;check&lt;/code&gt;  你的 root 密码，MySQL 就成功在你的电脑上安装完成了&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;配置环境变量&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置环境变量&#34;&gt;#&lt;/a&gt; 配置环境变量&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;安装完成后进入 MySQL 的安装目录，进入 &lt;code&gt;MySQL Sever&lt;/code&gt;  的 &lt;code&gt;bin&lt;/code&gt;  目录，复制路径&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;右键点击 &lt;code&gt;此电脑&lt;/code&gt; ，选择 &lt;code&gt;属性&lt;/code&gt; ，点击 &lt;code&gt;高级系统设置&lt;/code&gt; ，点击 &lt;code&gt;环境变量&lt;/code&gt; ，点击 &lt;code&gt;Path&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;点击 &lt;code&gt;新建&lt;/code&gt; ，将刚刚复制的路径 V 上去&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;&lt;code&gt;win + R&lt;/code&gt; , 输入用户名与刚刚设置的密码，进入数据库 ，搞定&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</content>
+        <category term="Mysql" />
+        <updated>2020-10-22T12:33:56.000Z</updated>
+    </entry>
+</feed>

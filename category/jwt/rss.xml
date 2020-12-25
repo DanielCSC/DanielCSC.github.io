@@ -23,6 +23,8 @@
         <category>Git</category>
         <category>数据可视化库</category>
         <category>WebSocket</category>
+        <category>Navicat</category>
+        <category>Mysql</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/04/12/JWT/</guid>
             <title>JWT--JSON WEB TOKEN</title>

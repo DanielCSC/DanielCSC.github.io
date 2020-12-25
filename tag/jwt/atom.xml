@@ -20,6 +20,8 @@
     <category term="Git" />
     <category term="数据可视化库" />
     <category term="WebSocket" />
+    <category term="Navicat" />
+    <category term="Mysql" />
     <entry>
         <id>https://mfx.icu/2020/04/20/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
         <title>Django--Rest-Framework-Jwt的使用</title>

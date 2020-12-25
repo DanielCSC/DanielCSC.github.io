@@ -1,0 +1,104 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>The course of true love never did run smooth. • Posts by &#34;navicat&#34; tag</title>
+        <link>https://mfx.icu</link>
+        <description>人生海海  山山而川  不过尔尔</description>
+        <language>zh-CN</language>
+        <pubDate>Fri, 23 Oct 2020 14:44:55 +0800</pubDate>
+        <lastBuildDate>Fri, 23 Oct 2020 14:44:55 +0800</lastBuildDate>
+        <category>SQL</category>
+        <category>JWT</category>
+        <category>Celery</category>
+        <category>序列化器</category>
+        <category>ORM</category>
+        <category>OAuth2.0</category>
+        <category>jwt</category>
+        <category>redis</category>
+        <category>vue生命周期</category>
+        <category>UI组件</category>
+        <category>生产环境部署</category>
+        <category>Docker</category>
+        <category>Docker_Desktop</category>
+        <category>Git</category>
+        <category>数据可视化库</category>
+        <category>WebSocket</category>
+        <category>Navicat</category>
+        <category>Mysql</category>
+        <item>
+            <guid isPermalink="true">https://mfx.icu/2020/10/23/NavicatPremium15%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/</guid>
+            <title>Navicat Premium 15安装激活</title>
+            <link>https://mfx.icu/2020/10/23/NavicatPremium15%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/</link>
+            <category>Navicat</category>
+            <pubDate>Fri, 23 Oct 2020 14:44:55 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载&#34;&gt;#&lt;/a&gt; 下载&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMWNESE5xc3BiWVRXNmxWTlhaeTd3ZEE=&#34;&gt;戳我&lt;/span&gt;，前往网盘下载，&lt;span class=&#34;label primary&#34;&gt;提取码&lt;/span&gt;：2u0r&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id=&#34;安装&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#安装&#34;&gt;#&lt;/a&gt; 安装&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;一路 next 到底🚀&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;4.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img data-src=&#34;5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;激活&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#激活&#34;&gt;#&lt;/a&gt; 激活&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;Patch&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;Patch 中选择 Backup、Host、Navicat v15，点击 Patch&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击 Patch 按钮就找到 Navicat Premium 15 的安装目录的 navicat.exe 文件&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;7.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;出现以下提示说明 Patch 成功了&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;8.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;License. Product and Language&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;License. Product and Language 区块中的 License 里选中 Enterprise、在 Produce 里选择 Premium、在 Languages 里选择 Simplified Chinese (简体中文)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;9.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;Resale License&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;保持默认即可&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;10.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;Keygen / Offline Activation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;点击 Generate 按钮就会生成一个许可证秘钥，将许可证秘钥复制后就打开 Navicat Premium 15&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;11.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;打开软件后会弹出一个提示框，一个是试用，一个是注册，这里我们点击注册&lt;/li&gt;
+&lt;li&gt;点击注册后在左边粘贴许可证秘钥，然后点击激活&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;12.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击激活后会提示因为激活服务器暂时不可用，所以你的许可证未能激活，我们就选择手动激活。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;13.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;点击手动激活后会有一个请求码，复制请求码到注册机中的 Request Code：里面，之后点击 Activation Code 下面的 Generate 按钮就会生成一个激活码&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;14.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;将激活码复制到 Navicat Premium 15 中的激活码框框里，点击激活即可完成激活&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;15.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+    </channel>
+</rss>

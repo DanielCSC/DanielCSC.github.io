@@ -1,0 +1,18 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "The course of true love never did run smooth. • All posts by \"mysql\" tag",
+    "description": "人生海海  山山而川  不过尔尔",
+    "home_page_url": "https://mfx.icu",
+    "items": [
+        {
+            "id": "https://mfx.icu/2020/10/22/Mysql-%E5%AE%89%E8%A3%85/",
+            "url": "https://mfx.icu/2020/10/22/Mysql-%E5%AE%89%E8%A3%85/",
+            "title": "Windows安装--Mysql",
+            "date_published": "2020-10-22T12:33:56.000Z",
+            "content_html": "<h1 id=\"下载\"><a class=\"markdownIt-Anchor\" href=\"#下载\">#</a> 下载</h1>\n<ul>\n<li>点击<a href=\"%5Bhttp://www.mysql.com%5D(http://www.mysql.com/)\">这里</a>，去往 Mysql 官网下载</li>\n<li><span class=\"exturl\" data-url=\"aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMTBSV0Rvb01vR1NkU2g4bUdibTI3amc=\">戳我</span>，前往网盘下载，版本为 <code>8.0.22.0</code> ，<span class=\"label primary\">提取码</span>：ad3l</li>\n</ul>\n<h1 id=\"安装\"><a class=\"markdownIt-Anchor\" href=\"#安装\">#</a> 安装</h1>\n<ol>\n<li>打开刚刚下载好的安装包，开始安装 MySQL</li>\n</ol>\n<ul>\n<li>选择 <code> I accept</code>  然后点击 <code>next</code>  进入下一步</li>\n</ul>\n<p><img data-src=\"1.png\" alt=\"\"></p>\n<ol start=\"2\">\n<li>这里选择 <code>Developer Default</code> ，然后点击 <code>nex</code> t 进入下一步</li>\n</ol>\n<p><img data-src=\"2.png\" alt=\"\"></p>\n<ol start=\"3\">\n<li>这一步是检查安装条件，直接点击 <code>next</code>  进入下一步就可以了</li>\n</ol>\n<p><img data-src=\"3.png\" alt=\"\"></p>\n<ol start=\"4\">\n<li>这里直接点击 <code>execute</code>  执行就可以了，执行完后点击 <code>next</code>  进入下一步</li>\n</ol>\n<p><img data-src=\"4.png\" alt=\"\"></p>\n<ol start=\"5\">\n<li>继续点击 <code>next</code></li>\n</ol>\n<p><img data-src=\"5.png\" alt=\"\"></p>\n<ol start=\"6\">\n<li>设置 <code>root密码</code> 然后点击 <code>next</code>  进入下一步。</li>\n</ol>\n<p><img data-src=\"6.png\" alt=\"\"></p>\n<ol start=\"7\">\n<li>一路点击 <code>nex</code> t，并 <code>check</code>  你的 root 密码，MySQL 就成功在你的电脑上安装完成了</li>\n</ol>\n<p><img data-src=\"7.png\" alt=\"\"></p>\n<h1 id=\"配置环境变量\"><a class=\"markdownIt-Anchor\" href=\"#配置环境变量\">#</a> 配置环境变量</h1>\n<ol>\n<li>安装完成后进入 MySQL 的安装目录，进入 <code>MySQL Sever</code>  的 <code>bin</code>  目录，复制路径</li>\n</ol>\n<p><img data-src=\"8.png\" alt=\"\"></p>\n<ol start=\"2\">\n<li>右键点击 <code>此电脑</code> ，选择 <code>属性</code> ，点击 <code>高级系统设置</code> ，点击 <code>环境变量</code> ，点击 <code>Path</code></li>\n</ol>\n<p><img data-src=\"9.png\" alt=\"\"></p>\n<ol start=\"3\">\n<li>点击 <code>新建</code> ，将刚刚复制的路径 V 上去</li>\n</ol>\n<p><img data-src=\"10.png\" alt=\"\"></p>\n<ol start=\"4\">\n<li><code>win + R</code> , 输入用户名与刚刚设置的密码，进入数据库 ，搞定</li>\n</ol>\n<p><img data-src=\"11.png\" alt=\"\"></p>\n",
+            "tags": [
+                "Mysql"
+            ]
+        }
+    ]
+}

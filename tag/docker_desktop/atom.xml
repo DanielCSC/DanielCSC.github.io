@@ -20,6 +20,8 @@
     <category term="Git" />
     <category term="数据可视化库" />
     <category term="WebSocket" />
+    <category term="Navicat" />
+    <category term="Mysql" />
     <entry>
         <id>https://mfx.icu/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</id>
         <title>Docker_Desktop使用Mysql、Redis</title>
