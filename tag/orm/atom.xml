@@ -22,6 +22,8 @@
     <category term="WebSocket" />
     <category term="Navicat" />
     <category term="Mysql" />
+    <category term="PayPal" />
+    <category term="Wechat" />
     <entry>
         <id>https://mfx.icu/2020/03/20/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</id>
         <title>Django--数据库ORM操作</title>

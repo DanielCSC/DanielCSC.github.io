@@ -22,6 +22,8 @@
     <category term="WebSocket" />
     <category term="Navicat" />
     <category term="Mysql" />
+    <category term="PayPal" />
+    <category term="Wechat" />
     <entry>
         <id>https://mfx.icu/2020/04/12/JWT/</id>
         <title>JWT--JSON WEB TOKEN</title>

@@ -22,6 +22,8 @@
     <category term="WebSocket" />
     <category term="Navicat" />
     <category term="Mysql" />
+    <category term="PayPal" />
+    <category term="Wechat" />
     <entry>
         <id>https://mfx.icu/2020/10/22/Mysql-%E5%AE%89%E8%A3%85/</id>
         <title>Windows安装--Mysql</title>

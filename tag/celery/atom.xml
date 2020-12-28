@@ -22,6 +22,8 @@
     <category term="WebSocket" />
     <category term="Navicat" />
     <category term="Mysql" />
+    <category term="PayPal" />
+    <category term="Wechat" />
     <entry>
         <id>https://mfx.icu/2020/11/20/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/</id>
         <title>Django--Celery异步框架</title>

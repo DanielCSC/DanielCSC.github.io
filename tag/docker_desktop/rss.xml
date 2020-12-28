@@ -25,6 +25,8 @@
         <category>WebSocket</category>
         <category>Navicat</category>
         <category>Mysql</category>
+        <category>PayPal</category>
+        <category>Wechat</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</guid>
             <title>Docker_Desktop使用Mysql、Redis</title>

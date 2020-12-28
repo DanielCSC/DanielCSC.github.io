@@ -22,6 +22,8 @@
     <category term="WebSocket" />
     <category term="Navicat" />
     <category term="Mysql" />
+    <category term="PayPal" />
+    <category term="Wechat" />
     <entry>
         <id>https://mfx.icu/2020/04/08/OAuth2-0%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%8E%88%E6%9D%83%E6%A8%A1%E5%BC%8F/</id>
         <title>OAuth2.0的四种授权模式</title>

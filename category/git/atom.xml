@@ -22,6 +22,8 @@
     <category term="WebSocket" />
     <category term="Navicat" />
     <category term="Mysql" />
+    <category term="PayPal" />
+    <category term="Wechat" />
     <entry>
         <id>https://mfx.icu/2020/12/19/Git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/</id>
         <title>Git基本命令</title>

@@ -22,6 +22,8 @@
     <category term="WebSocket" />
     <category term="Navicat" />
     <category term="Mysql" />
+    <category term="PayPal" />
+    <category term="Wechat" />
     <entry>
         <id>https://mfx.icu/2020/11/17/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/</id>
         <title>SQL--一切皆关系</title>
