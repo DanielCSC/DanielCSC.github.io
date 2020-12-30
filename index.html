@@ -88,12 +88,12 @@
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclwuom7cj20zk0m8dvn.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gipesrnqv3j20zk0m8ava.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx29mstj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxfdlttj20zk0m8npd.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclgi503lj20zk0m8hdt.jpg"></li>
-          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclip4jbpj20zk0m87cv.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclx6phq6j20zk0m8e36.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giciusoyjnj219g0u0x56.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclj61ylzj20zk0m8b29.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1gicis3attqj20zk0m8k7l.jpg"></li>
+          <li class="item" data-background-image="https://tva3.sinaimg.cn/large/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></li>
         </ul>
       </div>
     </header>
@@ -120,7 +120,45 @@
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/27/wechat-%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/" itemprop="url" title="Wechat--扫码支付"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclize41wj20zk0m87gk.jpg"></a>
+    <a href="/2020/12/30/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/" itemprop="url" title="Redis--缓存雪崩,击穿,穿透"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></a>
+  </div>
+  <div class="info">
+    
+<div class="meta">
+  <span class="item" title="创建时间：2020-12-30 19:57:46">
+    <span class="icon">
+      <i class="ic i-calendar"></i>
+    </span>
+    <time itemprop="dateCreated datePublished" datetime="2020-12-30T19:57:46+08:00">2020-12-30</time>
+  </span>
+</div>
+
+    <h3><a href="/2020/12/30/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/" itemprop="url" title="Redis--缓存雪崩,击穿,穿透">Redis--缓存雪崩,击穿,穿透</a></h3>
+    <div class="excerpt">
+        # 雪崩
+
+雪崩就是指缓存中大批量热点数据过期后系统涌入大量查询请求，因为大部分数据在 Redis 层已经失效，请求渗透到 DB ，引起数据库压力造成查询堵塞甚至 宕机 。
+
+举个简单的例子
+一个电商平台，如果首页所有的 Key 失效时间都是 12 小时，零点有个限时秒杀活动大量用户杀来，假设当时 6000/s 个请求，本来缓存可以顶住 5000/s 个请求，但是当时所有缓存的 Key 都失效了，这时每秒 6000 个请求全部落在数据库，犹如洪水决堤，造成宕机。
+解决方案
+
+不设置过期时间 （不建议）
+设置不同的过期时间，避免同一时间大量 key...
+    </div>
+    <div class="meta footer">
+      <span>
+        <a href="/categories/Redis/" itemprop="url" title="Redis"><i class="ic i-flag"></i>Redis</a>
+      </span>
+    </div>
+    <a href="/2020/12/30/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/" itemprop="url" title="Redis--缓存雪崩,击穿,穿透" class="btn">more...</a>
+  </div>
+</article>
+
+        
+<article class="item">
+  <div class="cover">
+    <a href="/2020/12/27/wechat-%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/" itemprop="url" title="Wechat--扫码支付"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></a>
   </div>
   <div class="info">
     
@@ -160,7 +198,7 @@ https://mp.weixin.qq.com
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/26/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/" itemprop="url" title="PayPal--跨境支付"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></a>
+    <a href="/2020/12/26/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/" itemprop="url" title="PayPal--跨境支付"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gicliwyw55j20zk0m8hdt.jpg"></a>
   </div>
   <div class="info">
     
@@ -193,7 +231,7 @@ PayPal 支付的优势就是其业务网络遍布全球。目前 PayPal 的庞�
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/24/WebSocket-%E5%85%A8%E5%8F%8C%E5%B7%A5%E9%80%9A%E4%BF%A1%E7%9A%84%E5%8D%8F%E8%AE%AE/" itemprop="url" title="WebSocket--全双工通信协议"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gicitht3xtj20zk0m8k5v.jpg"></a>
+    <a href="/2020/12/24/WebSocket-%E5%85%A8%E5%8F%8C%E5%B7%A5%E9%80%9A%E4%BF%A1%E7%9A%84%E5%8D%8F%E8%AE%AE/" itemprop="url" title="WebSocket--全双工通信协议"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclxxcb6rj20zk0m8b29.jpg"></a>
   </div>
   <div class="info">
     
@@ -231,7 +269,7 @@ WebSocket 使得客户端和服务器之间的数据交换变得更加简单，�
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/22/ECharts-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/" itemprop="url" title="ECharts--数据可视化库"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipewkhf1zj20zk0m81kx.jpg"></a>
+    <a href="/2020/12/22/ECharts-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/" itemprop="url" title="ECharts--数据可视化库"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giciub8ja1j20zk0m81ky.jpg"></a>
   </div>
   <div class="info">
     
@@ -272,7 +310,7 @@ import echarts from &quot;echarts&quot;;Vue.prototype.$echarts = echarts;
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/21/RBAC-%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url" title="RBAC--权限控制"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gicliierfjj20zk0m8npd.jpg"></a>
+    <a href="/2020/12/21/RBAC-%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" itemprop="url" title="RBAC--权限控制"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclfw2t96j20zk0m8x6p.jpg"></a>
   </div>
   <div class="info">
     
@@ -334,7 +372,7 @@ git commit -m &#39;备注&#39;			# 提交暂存区到仓库区git commit 文件�
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/16/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/" itemprop="url" title="Python--垃圾回收机制"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipexoj0moj20zk0m8kgu.jpg"></a>
+    <a href="/2020/12/16/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/" itemprop="url" title="Python--垃圾回收机制"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclip4jbpj20zk0m87cv.jpg"></a>
   </div>
   <div class="info">
     
@@ -376,7 +414,7 @@ Python垃圾回收 主要以 引用计数 为主， 分代回收 为辅。在 Py
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/" itemprop="url" title="Docker_Desktop使用Mysql、Redis"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giclimtf7dj20zk0m8qav.jpg"></a>
+    <a href="/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/" itemprop="url" title="Docker_Desktop使用Mysql、Redis"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giph4wqtg4j20zk0m8x6p.jpg"></a>
   </div>
   <div class="info">
     
@@ -422,7 +460,7 @@ docker run -it -p 6380:6379...
         
 <article class="item">
   <div class="cover">
-    <a href="/2020/12/04/Django-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" itemprop="url" title="Django + Uwsgi + Nginx 的生产环境部署"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipevo9j1jj20zk0m8e81.jpg"></a>
+    <a href="/2020/12/04/Django-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" itemprop="url" title="Django + Uwsgi + Nginx 的生产环境部署"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1giciuja1j1j20zk0m8kjl.jpg"></a>
   </div>
   <div class="info">
     
@@ -454,46 +492,6 @@ WSGI 定义了使用 python 编写的 web app(django) 与 web...
       </span>
     </div>
     <a href="/2020/12/04/Django-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" itemprop="url" title="Django + Uwsgi + Nginx 的生产环境部署" class="btn">more...</a>
-  </div>
-</article>
-
-        
-<article class="item">
-  <div class="cover">
-    <a href="/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url" title="Ubuntu安装Docker和docker的使用"><img data-src="https://tva3.sinaimg.cn/mw690/6833939bly1gipet8c1a2j20zk0m8kct.jpg"></a>
-  </div>
-  <div class="info">
-    
-<div class="meta">
-  <span class="item" title="创建时间：2020-12-01 10:58:04">
-    <span class="icon">
-      <i class="ic i-calendar"></i>
-    </span>
-    <time itemprop="dateCreated datePublished" datetime="2020-12-01T10:58:04+08:00">2020-12-01</time>
-  </span>
-</div>
-
-    <h3><a href="/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url" title="Ubuntu安装Docker和docker的使用">Ubuntu安装Docker和docker的使用</a></h3>
-    <div class="excerpt">
-        # Docker 概述
-
-Docker 是一个开源的应用容器引擎，基于 Go语言 并遵从 Apache2.0 协议开源。
-Docker 可以让开发者打包他们的应用以及依赖包到一个 轻量级 、 可移植 的容器中，然后发布到任何流行的 Linux 机器上，也可以实现虚拟化。
-容器是完全使用 沙箱机制 ，相互之间不会有任何接口（类似 iPhone 的 app）, 更重要的是容器性能开销极低。
-
-# Docker 应用场景
-
-Web 应用的自动化打包和发布。
-自动化测试和持续集成、发布。
-在服务型环境中部署和调整数据库或其他的后台应用。
-从头编译或者扩展现有的 OpenShift 或 Cloud...
-    </div>
-    <div class="meta footer">
-      <span>
-        <a href="/categories/Docker/" itemprop="url" title="Docker"><i class="ic i-flag"></i>Docker</a>
-      </span>
-    </div>
-    <a href="/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="url" title="Ubuntu安装Docker和docker的使用" class="btn">more...</a>
   </div>
 </article>
 
@@ -532,7 +530,7 @@ Web 应用的自动化打包和发布。
 <nav class="state">
     <div class="item posts">
       <a href="/archives/">
-        <span class="count">23</span>
+        <span class="count">24</span>
         <span class="name">文章</span>
       </a>
     </div>
