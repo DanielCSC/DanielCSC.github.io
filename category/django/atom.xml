@@ -4,26 +4,26 @@
     <title>The course of true love never did run smooth. • Posts by &#34;django&#34; category</title>
     <link href="https://mfx.icu" />
     <updated>2020-12-27T08:35:04.000Z</updated>
-    <category term="SQL" />
     <category term="JWT" />
-    <category term="Celery" />
     <category term="序列化器" />
+    <category term="Celery" />
     <category term="ORM" />
-    <category term="OAuth2.0" />
-    <category term="jwt" />
-    <category term="redis" />
-    <category term="vue生命周期" />
-    <category term="UI组件" />
     <category term="生产环境部署" />
-    <category term="Docker" />
     <category term="Docker_Desktop" />
-    <category term="Git" />
     <category term="数据可视化库" />
-    <category term="WebSocket" />
-    <category term="Navicat" />
+    <category term="Git" />
     <category term="Mysql" />
+    <category term="jwt" />
+    <category term="Navicat" />
+    <category term="OAuth2.0" />
     <category term="PayPal" />
+    <category term="redis" />
+    <category term="SQL" />
+    <category term="UI组件" />
+    <category term="vue生命周期" />
     <category term="Wechat" />
+    <category term="Docker" />
+    <category term="WebSocket" />
     <entry>
         <id>https://mfx.icu/2020/12/27/wechat-%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</id>
         <title>Wechat--扫码支付</title>

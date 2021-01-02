@@ -7,26 +7,26 @@
         <language>zh-CN</language>
         <pubDate>Fri, 04 Dec 2020 22:01:03 +0800</pubDate>
         <lastBuildDate>Fri, 04 Dec 2020 22:01:03 +0800</lastBuildDate>
-        <category>SQL</category>
         <category>JWT</category>
-        <category>Celery</category>
         <category>序列化器</category>
+        <category>Celery</category>
         <category>ORM</category>
-        <category>OAuth2.0</category>
-        <category>jwt</category>
-        <category>redis</category>
-        <category>vue生命周期</category>
-        <category>UI组件</category>
         <category>生产环境部署</category>
-        <category>Docker</category>
         <category>Docker_Desktop</category>
-        <category>Git</category>
         <category>数据可视化库</category>
-        <category>WebSocket</category>
-        <category>Navicat</category>
+        <category>Git</category>
         <category>Mysql</category>
+        <category>jwt</category>
+        <category>Navicat</category>
+        <category>OAuth2.0</category>
         <category>PayPal</category>
+        <category>redis</category>
+        <category>SQL</category>
+        <category>UI组件</category>
+        <category>vue生命周期</category>
         <category>Wechat</category>
+        <category>Docker</category>
+        <category>WebSocket</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/12/04/Django-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/</guid>
             <title>Django + Uwsgi + Nginx 的生产环境部署</title>

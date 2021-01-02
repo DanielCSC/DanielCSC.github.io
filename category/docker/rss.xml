@@ -7,26 +7,26 @@
         <language>zh-CN</language>
         <pubDate>Sat, 05 Dec 2020 09:29:08 +0800</pubDate>
         <lastBuildDate>Sat, 05 Dec 2020 09:29:08 +0800</lastBuildDate>
-        <category>SQL</category>
         <category>JWT</category>
-        <category>Celery</category>
         <category>序列化器</category>
+        <category>Celery</category>
         <category>ORM</category>
-        <category>OAuth2.0</category>
-        <category>jwt</category>
-        <category>redis</category>
-        <category>vue生命周期</category>
-        <category>UI组件</category>
         <category>生产环境部署</category>
-        <category>Docker</category>
         <category>Docker_Desktop</category>
-        <category>Git</category>
         <category>数据可视化库</category>
-        <category>WebSocket</category>
-        <category>Navicat</category>
+        <category>Git</category>
         <category>Mysql</category>
+        <category>jwt</category>
+        <category>Navicat</category>
+        <category>OAuth2.0</category>
         <category>PayPal</category>
+        <category>redis</category>
+        <category>SQL</category>
+        <category>UI组件</category>
+        <category>vue生命周期</category>
         <category>Wechat</category>
+        <category>Docker</category>
+        <category>WebSocket</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</guid>
             <title>Docker_Desktop使用Mysql、Redis</title>
