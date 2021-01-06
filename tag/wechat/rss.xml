@@ -8,29 +8,29 @@
         <pubDate>Sun, 27 Dec 2020 16:35:04 +0800</pubDate>
         <lastBuildDate>Sun, 27 Dec 2020 16:35:04 +0800</lastBuildDate>
         <category>JWT</category>
-        <category>序列化器</category>
         <category>Celery</category>
-        <category>ORM</category>
+        <category>序列化器</category>
         <category>生产环境部署</category>
+        <category>ORM</category>
         <category>Docker_Desktop</category>
         <category>数据可视化库</category>
         <category>Git</category>
         <category>Mysql</category>
         <category>jwt</category>
-        <category>Navicat</category>
         <category>OAuth2.0</category>
         <category>PayPal</category>
+        <category>Navicat</category>
         <category>redis</category>
         <category>SQL</category>
         <category>UI组件</category>
         <category>vue生命周期</category>
         <category>Wechat</category>
-        <category>Docker</category>
         <category>WebSocket</category>
+        <category>Docker</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/12/27/wechat-%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</guid>
+            <guid isPermalink="true">https://mfx.icu/article/wechat-%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</guid>
             <title>Wechat--扫码支付</title>
-            <link>https://mfx.icu/2020/12/27/wechat-%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</link>
+            <link>https://mfx.icu/article/wechat-%E6%89%AB%E7%A0%81%E6%94%AF%E4%BB%98/</link>
             <category>Wechat</category>
             <pubDate>Sun, 27 Dec 2020 16:35:04 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h1&gt;

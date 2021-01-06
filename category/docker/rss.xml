@@ -8,29 +8,29 @@
         <pubDate>Sat, 05 Dec 2020 09:29:08 +0800</pubDate>
         <lastBuildDate>Sat, 05 Dec 2020 09:29:08 +0800</lastBuildDate>
         <category>JWT</category>
-        <category>序列化器</category>
         <category>Celery</category>
-        <category>ORM</category>
+        <category>序列化器</category>
         <category>生产环境部署</category>
+        <category>ORM</category>
         <category>Docker_Desktop</category>
         <category>数据可视化库</category>
         <category>Git</category>
         <category>Mysql</category>
         <category>jwt</category>
-        <category>Navicat</category>
         <category>OAuth2.0</category>
         <category>PayPal</category>
+        <category>Navicat</category>
         <category>redis</category>
         <category>SQL</category>
         <category>UI组件</category>
         <category>vue生命周期</category>
         <category>Wechat</category>
-        <category>Docker</category>
         <category>WebSocket</category>
+        <category>Docker</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</guid>
+            <guid isPermalink="true">https://mfx.icu/article/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</guid>
             <title>Docker_Desktop使用Mysql、Redis</title>
-            <link>https://mfx.icu/2020/12/05/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</link>
+            <link>https://mfx.icu/article/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/</link>
             <category>Docker_Desktop</category>
             <pubDate>Sat, 05 Dec 2020 09:29:08 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;docker-desktop使用mysql&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-desktop使用mysql&#34;&gt;#&lt;/a&gt; Docker Desktop 使用 Mysql&lt;/h1&gt;
@@ -58,9 +58,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+            <guid isPermalink="true">https://mfx.icu/article/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
             <title>Ubuntu安装Docker和docker的使用</title>
-            <link>https://mfx.icu/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+            <link>https://mfx.icu/article/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
             <category>Docker</category>
             <pubDate>Tue, 01 Dec 2020 10:58:04 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;docker-概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-概述&#34;&gt;#&lt;/a&gt; Docker 概述&lt;/h1&gt;

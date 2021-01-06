@@ -5,29 +5,29 @@
     <link href="https://mfx.icu" />
     <updated>2020-03-10T12:10:28.000Z</updated>
     <category term="JWT" />
-    <category term="序列化器" />
     <category term="Celery" />
-    <category term="ORM" />
+    <category term="序列化器" />
     <category term="生产环境部署" />
+    <category term="ORM" />
     <category term="Docker_Desktop" />
     <category term="数据可视化库" />
     <category term="Git" />
     <category term="Mysql" />
     <category term="jwt" />
-    <category term="Navicat" />
     <category term="OAuth2.0" />
     <category term="PayPal" />
+    <category term="Navicat" />
     <category term="redis" />
     <category term="SQL" />
     <category term="UI组件" />
     <category term="vue生命周期" />
     <category term="Wechat" />
-    <category term="Docker" />
     <category term="WebSocket" />
+    <category term="Docker" />
     <entry>
-        <id>https://mfx.icu/2020/03/10/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</id>
+        <id>https://mfx.icu/article/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</id>
         <title>Django--序列化器</title>
-        <link rel="alternate" href="https://mfx.icu/2020/03/10/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/"/>
+        <link rel="alternate" href="https://mfx.icu/article/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/"/>
         <content type="html">&lt;h1 id=&#34;1-序列化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-序列化&#34;&gt;#&lt;/a&gt; 1. 序列化&lt;/h1&gt;
 &lt;hr&gt;
 &lt;p&gt;DRF 的核心 就是 前后端分离的核心&lt;/p&gt;

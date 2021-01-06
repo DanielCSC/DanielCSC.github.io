@@ -5,29 +5,29 @@
     <link href="https://mfx.icu" />
     <updated>2020-11-17T12:12:50.000Z</updated>
     <category term="JWT" />
-    <category term="序列化器" />
     <category term="Celery" />
-    <category term="ORM" />
+    <category term="序列化器" />
     <category term="生产环境部署" />
+    <category term="ORM" />
     <category term="Docker_Desktop" />
     <category term="数据可视化库" />
     <category term="Git" />
     <category term="Mysql" />
     <category term="jwt" />
-    <category term="Navicat" />
     <category term="OAuth2.0" />
     <category term="PayPal" />
+    <category term="Navicat" />
     <category term="redis" />
     <category term="SQL" />
     <category term="UI组件" />
     <category term="vue生命周期" />
     <category term="Wechat" />
-    <category term="Docker" />
     <category term="WebSocket" />
+    <category term="Docker" />
     <entry>
-        <id>https://mfx.icu/2020/11/17/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/</id>
+        <id>https://mfx.icu/article/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/</id>
         <title>SQL--一切皆关系</title>
-        <link rel="alternate" href="https://mfx.icu/2020/11/17/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/"/>
+        <link rel="alternate" href="https://mfx.icu/article/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/"/>
         <content type="html">&lt;h1 id=&#34;sql一切皆关系&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#sql一切皆关系&#34;&gt;#&lt;/a&gt; SQL–一切皆关系&lt;/h1&gt;
 &lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
 &lt;p&gt;在计算机领域有许多伟大的设计理念和思想，例如：&lt;/p&gt;

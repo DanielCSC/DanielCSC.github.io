@@ -5,29 +5,29 @@
     <link href="https://mfx.icu" />
     <updated>2020-12-01T02:58:04.000Z</updated>
     <category term="JWT" />
-    <category term="序列化器" />
     <category term="Celery" />
-    <category term="ORM" />
+    <category term="序列化器" />
     <category term="生产环境部署" />
+    <category term="ORM" />
     <category term="Docker_Desktop" />
     <category term="数据可视化库" />
     <category term="Git" />
     <category term="Mysql" />
     <category term="jwt" />
-    <category term="Navicat" />
     <category term="OAuth2.0" />
     <category term="PayPal" />
+    <category term="Navicat" />
     <category term="redis" />
     <category term="SQL" />
     <category term="UI组件" />
     <category term="vue生命周期" />
     <category term="Wechat" />
-    <category term="Docker" />
     <category term="WebSocket" />
+    <category term="Docker" />
     <entry>
-        <id>https://mfx.icu/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+        <id>https://mfx.icu/article/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
         <title>Ubuntu安装Docker和docker的使用</title>
-        <link rel="alternate" href="https://mfx.icu/2020/12/01/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+        <link rel="alternate" href="https://mfx.icu/article/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
         <content type="html">&lt;h1 id=&#34;docker-概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-概述&#34;&gt;#&lt;/a&gt; Docker 概述&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;&lt;code&gt;Docker &lt;/code&gt; 是一个开源的应用容器引擎，基于 &lt;code&gt;Go语言&lt;/code&gt; 并遵从 Apache2.0 协议开源。&lt;/p&gt;

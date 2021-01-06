@@ -8,29 +8,29 @@
         <pubDate>Wed, 30 Dec 2020 19:57:46 +0800</pubDate>
         <lastBuildDate>Wed, 30 Dec 2020 19:57:46 +0800</lastBuildDate>
         <category>JWT</category>
-        <category>序列化器</category>
         <category>Celery</category>
-        <category>ORM</category>
+        <category>序列化器</category>
         <category>生产环境部署</category>
+        <category>ORM</category>
         <category>Docker_Desktop</category>
         <category>数据可视化库</category>
         <category>Git</category>
         <category>Mysql</category>
         <category>jwt</category>
-        <category>Navicat</category>
         <category>OAuth2.0</category>
         <category>PayPal</category>
+        <category>Navicat</category>
         <category>redis</category>
         <category>SQL</category>
         <category>UI组件</category>
         <category>vue生命周期</category>
         <category>Wechat</category>
-        <category>Docker</category>
         <category>WebSocket</category>
+        <category>Docker</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/12/30/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/</guid>
+            <guid isPermalink="true">https://mfx.icu/article/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/</guid>
             <title>Redis--缓存雪崩,击穿,穿透</title>
-            <link>https://mfx.icu/2020/12/30/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/</link>
+            <link>https://mfx.icu/article/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/</link>
             <category>redis</category>
             <pubDate>Wed, 30 Dec 2020 19:57:46 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;雪崩&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#雪崩&#34;&gt;#&lt;/a&gt; 雪崩&lt;/h1&gt;
@@ -82,9 +82,9 @@
  ]]></description>
         </item>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/10/05/Redis/</guid>
+            <guid isPermalink="true">https://mfx.icu/article/Redis/</guid>
             <title>初步了解--Redis</title>
-            <link>https://mfx.icu/2020/10/05/Redis/</link>
+            <link>https://mfx.icu/article/Redis/</link>
             <category>redis</category>
             <pubDate>Mon, 05 Oct 2020 11:24:42 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;redisremote-dictionary-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#redisremote-dictionary-server&#34;&gt;#&lt;/a&gt; Redis（Remote Dictionary Server )&lt;/h1&gt;

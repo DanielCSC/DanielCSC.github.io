@@ -5,29 +5,29 @@
     <link href="https://mfx.icu" />
     <updated>2020-12-30T11:57:46.000Z</updated>
     <category term="JWT" />
-    <category term="序列化器" />
     <category term="Celery" />
-    <category term="ORM" />
+    <category term="序列化器" />
     <category term="生产环境部署" />
+    <category term="ORM" />
     <category term="Docker_Desktop" />
     <category term="数据可视化库" />
     <category term="Git" />
     <category term="Mysql" />
     <category term="jwt" />
-    <category term="Navicat" />
     <category term="OAuth2.0" />
     <category term="PayPal" />
+    <category term="Navicat" />
     <category term="redis" />
     <category term="SQL" />
     <category term="UI组件" />
     <category term="vue生命周期" />
     <category term="Wechat" />
-    <category term="Docker" />
     <category term="WebSocket" />
+    <category term="Docker" />
     <entry>
-        <id>https://mfx.icu/2020/12/30/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/</id>
+        <id>https://mfx.icu/article/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/</id>
         <title>Redis--缓存雪崩,击穿,穿透</title>
-        <link rel="alternate" href="https://mfx.icu/2020/12/30/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/"/>
+        <link rel="alternate" href="https://mfx.icu/article/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/"/>
         <content type="html">&lt;h1 id=&#34;雪崩&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#雪崩&#34;&gt;#&lt;/a&gt; 雪崩&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;雪崩就是指缓存中大批量热点数据过期后系统涌入大量查询请求，因为大部分数据在 &lt;code&gt;Redis&lt;/code&gt;  层已经失效，请求渗透到 &lt;code&gt;DB&lt;/code&gt; ，引起数据库压力造成查询堵塞甚至 &lt;code&gt;宕机&lt;/code&gt; 。&lt;/p&gt;
@@ -79,9 +79,9 @@
         <updated>2020-12-30T11:57:46.000Z</updated>
     </entry>
     <entry>
-        <id>https://mfx.icu/2020/10/05/Redis/</id>
+        <id>https://mfx.icu/article/Redis/</id>
         <title>初步了解--Redis</title>
-        <link rel="alternate" href="https://mfx.icu/2020/10/05/Redis/"/>
+        <link rel="alternate" href="https://mfx.icu/article/Redis/"/>
         <content type="html">&lt;h1 id=&#34;redisremote-dictionary-server&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#redisremote-dictionary-server&#34;&gt;#&lt;/a&gt; Redis（Remote Dictionary Server )&lt;/h1&gt;
 &lt;h4 id=&#34;简介&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#简介&#34;&gt;#&lt;/a&gt; 简介&lt;/h4&gt;
 &lt;blockquote&gt;

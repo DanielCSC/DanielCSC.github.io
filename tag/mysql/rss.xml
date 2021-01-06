@@ -8,29 +8,29 @@
         <pubDate>Thu, 22 Oct 2020 20:33:56 +0800</pubDate>
         <lastBuildDate>Thu, 22 Oct 2020 20:33:56 +0800</lastBuildDate>
         <category>JWT</category>
-        <category>序列化器</category>
         <category>Celery</category>
-        <category>ORM</category>
+        <category>序列化器</category>
         <category>生产环境部署</category>
+        <category>ORM</category>
         <category>Docker_Desktop</category>
         <category>数据可视化库</category>
         <category>Git</category>
         <category>Mysql</category>
         <category>jwt</category>
-        <category>Navicat</category>
         <category>OAuth2.0</category>
         <category>PayPal</category>
+        <category>Navicat</category>
         <category>redis</category>
         <category>SQL</category>
         <category>UI组件</category>
         <category>vue生命周期</category>
         <category>Wechat</category>
-        <category>Docker</category>
         <category>WebSocket</category>
+        <category>Docker</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/10/22/Mysql-%E5%AE%89%E8%A3%85/</guid>
+            <guid isPermalink="true">https://mfx.icu/article/Mysql-%E5%AE%89%E8%A3%85/</guid>
             <title>Windows安装--Mysql</title>
-            <link>https://mfx.icu/2020/10/22/Mysql-%E5%AE%89%E8%A3%85/</link>
+            <link>https://mfx.icu/article/Mysql-%E5%AE%89%E8%A3%85/</link>
             <category>Mysql</category>
             <pubDate>Thu, 22 Oct 2020 20:33:56 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;下载&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#下载&#34;&gt;#&lt;/a&gt; 下载&lt;/h1&gt;

@@ -5,29 +5,29 @@
     <link href="https://mfx.icu" />
     <updated>2020-12-26T06:47:25.000Z</updated>
     <category term="JWT" />
-    <category term="序列化器" />
     <category term="Celery" />
-    <category term="ORM" />
+    <category term="序列化器" />
     <category term="生产环境部署" />
+    <category term="ORM" />
     <category term="Docker_Desktop" />
     <category term="数据可视化库" />
     <category term="Git" />
     <category term="Mysql" />
     <category term="jwt" />
-    <category term="Navicat" />
     <category term="OAuth2.0" />
     <category term="PayPal" />
+    <category term="Navicat" />
     <category term="redis" />
     <category term="SQL" />
     <category term="UI组件" />
     <category term="vue生命周期" />
     <category term="Wechat" />
-    <category term="Docker" />
     <category term="WebSocket" />
+    <category term="Docker" />
     <entry>
-        <id>https://mfx.icu/2020/12/26/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</id>
+        <id>https://mfx.icu/article/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</id>
         <title>PayPal--跨境支付</title>
-        <link rel="alternate" href="https://mfx.icu/2020/12/26/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/"/>
+        <link rel="alternate" href="https://mfx.icu/article/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/"/>
         <content type="html">&lt;h1 id=&#34;概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;PayPal 是倍受全球亿万用户追捧的国际贸易支付工具&lt;/p&gt;

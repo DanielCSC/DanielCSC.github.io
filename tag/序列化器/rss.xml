@@ -8,29 +8,29 @@
         <pubDate>Tue, 10 Mar 2020 20:10:28 +0800</pubDate>
         <lastBuildDate>Tue, 10 Mar 2020 20:10:28 +0800</lastBuildDate>
         <category>JWT</category>
-        <category>序列化器</category>
         <category>Celery</category>
-        <category>ORM</category>
+        <category>序列化器</category>
         <category>生产环境部署</category>
+        <category>ORM</category>
         <category>Docker_Desktop</category>
         <category>数据可视化库</category>
         <category>Git</category>
         <category>Mysql</category>
         <category>jwt</category>
-        <category>Navicat</category>
         <category>OAuth2.0</category>
         <category>PayPal</category>
+        <category>Navicat</category>
         <category>redis</category>
         <category>SQL</category>
         <category>UI组件</category>
         <category>vue生命周期</category>
         <category>Wechat</category>
-        <category>Docker</category>
         <category>WebSocket</category>
+        <category>Docker</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/2020/03/10/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</guid>
+            <guid isPermalink="true">https://mfx.icu/article/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</guid>
             <title>Django--序列化器</title>
-            <link>https://mfx.icu/2020/03/10/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</link>
+            <link>https://mfx.icu/article/Django-%E5%BA%8F%E5%88%97%E5%8C%96%E5%99%A8/</link>
             <category>序列化器</category>
             <pubDate>Tue, 10 Mar 2020 20:10:28 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;1-序列化&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1-序列化&#34;&gt;#&lt;/a&gt; 1. 序列化&lt;/h1&gt;
