@@ -7,26 +7,26 @@
         <language>zh-CN</language>
         <pubDate>Wed, 06 Jan 2021 16:43:14 +0800</pubDate>
         <lastBuildDate>Wed, 06 Jan 2021 16:43:14 +0800</lastBuildDate>
-        <category>vue生命周期</category>
-        <category>UI组件</category>
-        <category>Mysql</category>
-        <category>Navicat</category>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
         <category>ORM</category>
-        <category>PayPal</category>
         <category>生产环境部署</category>
-        <category>Docker_Desktop</category>
+        <category>PayPal</category>
         <category>Wechat</category>
-        <category>数据可视化库</category>
-        <category>Git</category>
+        <category>Mysql</category>
+        <category>Navicat</category>
+        <category>UI组件</category>
+        <category>vue生命周期</category>
+        <category>Docker_Desktop</category>
         <category>jwt</category>
+        <category>Git</category>
+        <category>数据可视化库</category>
         <category>OAuth2.0</category>
-        <category>WebSocket</category>
         <category>SQL</category>
-        <category>Docker</category>
+        <category>WebSocket</category>
         <category>redis</category>
+        <category>Docker</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</guid>
             <title>MySQL主从热备</title>

@@ -7,26 +7,26 @@
         <language>zh-CN</language>
         <pubDate>Wed, 30 Dec 2020 19:57:46 +0800</pubDate>
         <lastBuildDate>Wed, 30 Dec 2020 19:57:46 +0800</lastBuildDate>
-        <category>vue生命周期</category>
-        <category>UI组件</category>
-        <category>Mysql</category>
-        <category>Navicat</category>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
         <category>ORM</category>
-        <category>PayPal</category>
         <category>生产环境部署</category>
-        <category>Docker_Desktop</category>
+        <category>PayPal</category>
         <category>Wechat</category>
-        <category>数据可视化库</category>
-        <category>Git</category>
+        <category>Mysql</category>
+        <category>Navicat</category>
+        <category>UI组件</category>
+        <category>vue生命周期</category>
+        <category>Docker_Desktop</category>
         <category>jwt</category>
+        <category>Git</category>
+        <category>数据可视化库</category>
         <category>OAuth2.0</category>
-        <category>WebSocket</category>
         <category>SQL</category>
-        <category>Docker</category>
+        <category>WebSocket</category>
         <category>redis</category>
+        <category>Docker</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/</guid>
             <title>Redis--缓存雪崩,击穿,穿透</title>

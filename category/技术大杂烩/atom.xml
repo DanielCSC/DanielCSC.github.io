@@ -4,26 +4,26 @@
     <title>The course of true love never did run smooth. • Posts by &#34;技术大杂烩&#34; category</title>
     <link href="https://mfx.icu" />
     <updated>2020-12-24T02:48:55.000Z</updated>
-    <category term="vue生命周期" />
-    <category term="UI组件" />
-    <category term="Mysql" />
-    <category term="Navicat" />
     <category term="JWT" />
     <category term="Celery" />
     <category term="序列化器" />
     <category term="ORM" />
-    <category term="PayPal" />
     <category term="生产环境部署" />
-    <category term="Docker_Desktop" />
+    <category term="PayPal" />
     <category term="Wechat" />
-    <category term="数据可视化库" />
-    <category term="Git" />
+    <category term="Mysql" />
+    <category term="Navicat" />
+    <category term="UI组件" />
+    <category term="vue生命周期" />
+    <category term="Docker_Desktop" />
     <category term="jwt" />
+    <category term="Git" />
+    <category term="数据可视化库" />
     <category term="OAuth2.0" />
-    <category term="WebSocket" />
     <category term="SQL" />
-    <category term="Docker" />
+    <category term="WebSocket" />
     <category term="redis" />
+    <category term="Docker" />
     <entry>
         <id>https://mfx.icu/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/WebSocket-%E5%85%A8%E5%8F%8C%E5%B7%A5%E9%80%9A%E4%BF%A1%E7%9A%84%E5%8D%8F%E8%AE%AE/</id>
         <title>WebSocket--全双工通信协议</title>

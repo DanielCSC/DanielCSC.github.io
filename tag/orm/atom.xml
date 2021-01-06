@@ -4,26 +4,26 @@
     <title>The course of true love never did run smooth. • Posts by &#34;orm&#34; tag</title>
     <link href="https://mfx.icu" />
     <updated>2020-03-20T09:07:42.000Z</updated>
-    <category term="vue生命周期" />
-    <category term="UI组件" />
-    <category term="Mysql" />
-    <category term="Navicat" />
     <category term="JWT" />
     <category term="Celery" />
     <category term="序列化器" />
     <category term="ORM" />
-    <category term="PayPal" />
     <category term="生产环境部署" />
-    <category term="Docker_Desktop" />
+    <category term="PayPal" />
     <category term="Wechat" />
-    <category term="数据可视化库" />
-    <category term="Git" />
+    <category term="Mysql" />
+    <category term="Navicat" />
+    <category term="UI组件" />
+    <category term="vue生命周期" />
+    <category term="Docker_Desktop" />
     <category term="jwt" />
+    <category term="Git" />
+    <category term="数据可视化库" />
     <category term="OAuth2.0" />
-    <category term="WebSocket" />
     <category term="SQL" />
-    <category term="Docker" />
+    <category term="WebSocket" />
     <category term="redis" />
+    <category term="Docker" />
     <entry>
         <id>https://mfx.icu/Django%E6%A1%86%E6%9E%B6/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</id>
         <title>Django--数据库ORM操作</title>
