@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://mfx.icu</id>
+    <title>The course of true love never did run smooth. • Posts by &#34;mysql&#34; category</title>
+    <link href="https://mfx.icu" />
+    <updated>2021-01-06T08:43:14.000Z</updated>
+    <category term="vue生命周期" />
+    <category term="UI组件" />
+    <category term="JWT" />
+    <category term="Celery" />
+    <category term="序列化器" />
+    <category term="ORM" />
+    <category term="生产环境部署" />
+    <category term="PayPal" />
+    <category term="Wechat" />
+    <category term="Navicat" />
+    <category term="Mysql" />
+    <category term="Docker_Desktop" />
+    <category term="数据可视化库" />
+    <category term="Git" />
+    <category term="jwt" />
+    <category term="OAuth2.0" />
+    <category term="SQL" />
+    <category term="WebSocket" />
+    <category term="Docker" />
+    <category term="redis" />
+    <entry>
+        <id>https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</id>
+        <title>MySQL主从热备</title>
+        <link rel="alternate" href="https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/"/>
+        <content type="html"></content>
+        <updated>2021-01-06T08:43:14.000Z</updated>
+    </entry>
+</feed>

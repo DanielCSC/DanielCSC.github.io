@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<rss version="2.0">
+    <channel>
+        <title>The course of true love never did run smooth. • Posts by &#34;mysql&#34; category</title>
+        <link>https://mfx.icu</link>
+        <description>人生海海  山山而川  不过尔尔</description>
+        <language>zh-CN</language>
+        <pubDate>Wed, 06 Jan 2021 16:43:14 +0800</pubDate>
+        <lastBuildDate>Wed, 06 Jan 2021 16:43:14 +0800</lastBuildDate>
+        <category>vue生命周期</category>
+        <category>UI组件</category>
+        <category>JWT</category>
+        <category>Celery</category>
+        <category>序列化器</category>
+        <category>ORM</category>
+        <category>生产环境部署</category>
+        <category>PayPal</category>
+        <category>Wechat</category>
+        <category>Navicat</category>
+        <category>Mysql</category>
+        <category>Docker_Desktop</category>
+        <category>数据可视化库</category>
+        <category>Git</category>
+        <category>jwt</category>
+        <category>OAuth2.0</category>
+        <category>SQL</category>
+        <category>WebSocket</category>
+        <category>Docker</category>
+        <category>redis</category>
+        <item>
+            <guid isPermalink="true">https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</guid>
+            <title>MySQL主从热备</title>
+            <link>https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</link>
+            <pubDate>Wed, 06 Jan 2021 16:43:14 +0800</pubDate>
+            <description><![CDATA[  ]]></description>
+        </item>
+    </channel>
+</rss>

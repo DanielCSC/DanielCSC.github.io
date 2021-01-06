@@ -7,30 +7,30 @@
         <language>zh-CN</language>
         <pubDate>Tue, 01 Dec 2020 10:58:04 +0800</pubDate>
         <lastBuildDate>Tue, 01 Dec 2020 10:58:04 +0800</lastBuildDate>
+        <category>vue生命周期</category>
+        <category>UI组件</category>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
-        <category>生产环境部署</category>
         <category>ORM</category>
+        <category>生产环境部署</category>
+        <category>PayPal</category>
+        <category>Wechat</category>
+        <category>Navicat</category>
+        <category>Mysql</category>
         <category>Docker_Desktop</category>
         <category>数据可视化库</category>
         <category>Git</category>
-        <category>Mysql</category>
         <category>jwt</category>
         <category>OAuth2.0</category>
-        <category>PayPal</category>
-        <category>Navicat</category>
-        <category>redis</category>
         <category>SQL</category>
-        <category>UI组件</category>
-        <category>vue生命周期</category>
-        <category>Wechat</category>
         <category>WebSocket</category>
         <category>Docker</category>
+        <category>redis</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/article/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
+            <guid isPermalink="true">https://mfx.icu/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</guid>
             <title>Ubuntu安装Docker和docker的使用</title>
-            <link>https://mfx.icu/article/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
+            <link>https://mfx.icu/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/</link>
             <category>Docker</category>
             <pubDate>Tue, 01 Dec 2020 10:58:04 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;docker-概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#docker-概述&#34;&gt;#&lt;/a&gt; Docker 概述&lt;/h1&gt;
