@@ -5,8 +5,8 @@
         <link>https://mfx.icu</link>
         <description>人生海海  山山而川  不过尔尔</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 06 Jan 2021 20:22:01 +0800</pubDate>
-        <lastBuildDate>Wed, 06 Jan 2021 20:22:01 +0800</lastBuildDate>
+        <pubDate>Wed, 22 Apr 2020 20:22:01 +0800</pubDate>
+        <lastBuildDate>Wed, 22 Apr 2020 20:22:01 +0800</lastBuildDate>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
@@ -32,7 +32,7 @@
             <title>Django--JWT使用</title>
             <link>https://mfx.icu/Django%E6%A1%86%E6%9E%B6/Django-JWT%E4%BD%BF%E7%94%A8/</link>
             <category>JWT</category>
-            <pubDate>Wed, 06 Jan 2021 20:22:01 +0800</pubDate>
+            <pubDate>Wed, 22 Apr 2020 20:22:01 +0800</pubDate>
             <description><![CDATA[ &lt;h3 id=&#34;1jwt安装配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1jwt安装配置&#34;&gt;#&lt;/a&gt; 1.JWT 安装配置&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;安装 JWT&lt;/li&gt;
