@@ -7,30 +7,30 @@
         <language>zh-CN</language>
         <pubDate>Fri, 20 Mar 2020 17:07:42 +0800</pubDate>
         <lastBuildDate>Fri, 20 Mar 2020 17:07:42 +0800</lastBuildDate>
-        <category>UI组件</category>
-        <category>vue生命周期</category>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
-        <category>ORM</category>
         <category>PayPal</category>
-        <category>生产环境部署</category>
-        <category>Mysql</category>
+        <category>ORM</category>
+        <category>vue生命周期</category>
         <category>Wechat</category>
+        <category>生产环境部署</category>
+        <category>UI组件</category>
+        <category>Mysql</category>
+        <category>数据可视化库</category>
         <category>Navicat</category>
         <category>Docker_Desktop</category>
         <category>Git</category>
-        <category>数据可视化库</category>
         <category>jwt</category>
         <category>OAuth2.0</category>
-        <category>WebSocket</category>
         <category>SQL</category>
+        <category>WebSocket</category>
         <category>Docker</category>
         <category>redis</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/django/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</guid>
+            <guid isPermalink="true">https://mfx.icu/Django/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</guid>
             <title>Django--数据库ORM操作</title>
-            <link>https://mfx.icu/django/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</link>
+            <link>https://mfx.icu/Django/Django-%E6%95%B0%E6%8D%AE%E5%BA%93ORM%E6%93%8D%E4%BD%9C/</link>
             <category>ORM</category>
             <pubDate>Fri, 20 Mar 2020 17:07:42 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;1创建单表模型类&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1创建单表模型类&#34;&gt;#&lt;/a&gt; 1. 创建单表模型类&lt;/h1&gt;

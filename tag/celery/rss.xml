@@ -7,30 +7,30 @@
         <language>zh-CN</language>
         <pubDate>Fri, 20 Nov 2020 16:18:25 +0800</pubDate>
         <lastBuildDate>Fri, 20 Nov 2020 16:18:25 +0800</lastBuildDate>
-        <category>UI组件</category>
-        <category>vue生命周期</category>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
-        <category>ORM</category>
         <category>PayPal</category>
-        <category>生产环境部署</category>
-        <category>Mysql</category>
+        <category>ORM</category>
+        <category>vue生命周期</category>
         <category>Wechat</category>
+        <category>生产环境部署</category>
+        <category>UI组件</category>
+        <category>Mysql</category>
+        <category>数据可视化库</category>
         <category>Navicat</category>
         <category>Docker_Desktop</category>
         <category>Git</category>
-        <category>数据可视化库</category>
         <category>jwt</category>
         <category>OAuth2.0</category>
-        <category>WebSocket</category>
         <category>SQL</category>
+        <category>WebSocket</category>
         <category>Docker</category>
         <category>redis</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/django/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/</guid>
+            <guid isPermalink="true">https://mfx.icu/Django/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/</guid>
             <title>Celery异步框架</title>
-            <link>https://mfx.icu/django/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/</link>
+            <link>https://mfx.icu/Django/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/</link>
             <category>Celery</category>
             <pubDate>Fri, 20 Nov 2020 16:18:25 +0800</pubDate>
             <description><![CDATA[ &lt;h2 id=&#34;celery异步框架&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#celery异步框架&#34;&gt;#&lt;/a&gt; Celery 异步框架&lt;/h2&gt;

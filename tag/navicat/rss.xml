@@ -7,24 +7,24 @@
         <language>zh-CN</language>
         <pubDate>Fri, 23 Oct 2020 14:44:55 +0800</pubDate>
         <lastBuildDate>Fri, 23 Oct 2020 14:44:55 +0800</lastBuildDate>
-        <category>UI组件</category>
-        <category>vue生命周期</category>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
-        <category>ORM</category>
         <category>PayPal</category>
-        <category>生产环境部署</category>
-        <category>Mysql</category>
+        <category>ORM</category>
+        <category>vue生命周期</category>
         <category>Wechat</category>
+        <category>生产环境部署</category>
+        <category>UI组件</category>
+        <category>Mysql</category>
+        <category>数据可视化库</category>
         <category>Navicat</category>
         <category>Docker_Desktop</category>
         <category>Git</category>
-        <category>数据可视化库</category>
         <category>jwt</category>
         <category>OAuth2.0</category>
-        <category>WebSocket</category>
         <category>SQL</category>
+        <category>WebSocket</category>
         <category>Docker</category>
         <category>redis</category>
         <item>
