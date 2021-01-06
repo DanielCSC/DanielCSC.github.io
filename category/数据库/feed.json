@@ -5,14 +5,6 @@
     "home_page_url": "https://mfx.icu",
     "items": [
         {
-            "id": "https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/",
-            "url": "https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/",
-            "title": "MySQL主从热备",
-            "date_published": "2021-01-06T08:43:14.000Z",
-            "content_html": "",
-            "tags": []
-        },
-        {
             "id": "https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/",
             "url": "https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/",
             "title": "Redis--缓存雪崩,击穿,穿透",
@@ -31,6 +23,14 @@
             "tags": [
                 "redis"
             ]
+        },
+        {
+            "id": "https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/",
+            "url": "https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/",
+            "title": "MySQL主从热备",
+            "date_published": "2020-08-30T13:43:14.000Z",
+            "content_html": "<h1 id=\"概述\"><a class=\"markdownIt-Anchor\" href=\"#概述\">#</a> 概述</h1>\n<blockquote>\n<p>MySQL 是现在普遍使用的数据库，但是如果宕机了必然会造成数据丢失。为了保证 MySQL 数据库的可靠性，就要会一些提高可靠性的技术。MySQL 主从热备可以做到实时备份数据。</p>\n<p>用途：备份，读写分离，高可用和故障切换，MySQL 升级测试</p>\n</blockquote>\n<h1 id=\"原理\"><a class=\"markdownIt-Anchor\" href=\"#原理\">#</a> 原理</h1>\n<ul>\n<li>作为主服务器的 <code>Master</code> ，会把自己的每一次改动（每条 sql 语句）都记录到二进制日志 <code>Binarylog</code>  中</li>\n<li>作为从服务器的 <code>Slave</code>  将 <code>Master</code>  的 <code>Binary log</code>  拷贝到它的中继日志 <code>relay log</code>  中，然后 <code>Slave</code>  自己的 <code>sql线程</code> 会负责读取这个中继日志，并执行一遍。</li>\n<li>这样 <code>Slave</code>  的数据就和 <code>Master</code>  上的数据相同了。</li>\n<li>整个过程，MySQL 使用 3 个线程来执行复制同步功能，其中两个线程 <code>Sql线程和IO线程</code> 在从服务器，另外一个线程 <code>IO线程</code> 在主服务器。</li>\n</ul>\n<p><img data-src=\"1.jpg\" alt=\"\"></p>\n",
+            "tags": []
         }
     ]
 }

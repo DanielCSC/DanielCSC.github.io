@@ -5,8 +5,8 @@
         <link>https://mfx.icu</link>
         <description>人生海海  山山而川  不过尔尔</description>
         <language>zh-CN</language>
-        <pubDate>Wed, 06 Jan 2021 16:43:14 +0800</pubDate>
-        <lastBuildDate>Wed, 06 Jan 2021 16:43:14 +0800</lastBuildDate>
+        <pubDate>Sun, 30 Aug 2020 21:43:14 +0800</pubDate>
+        <lastBuildDate>Sun, 30 Aug 2020 21:43:14 +0800</lastBuildDate>
         <category>JWT</category>
         <category>Celery</category>
         <category>序列化器</category>
@@ -31,8 +31,21 @@
             <guid isPermalink="true">https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</guid>
             <title>MySQL主从热备</title>
             <link>https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</link>
-            <pubDate>Wed, 06 Jan 2021 16:43:14 +0800</pubDate>
-            <description><![CDATA[  ]]></description>
+            <pubDate>Sun, 30 Aug 2020 21:43:14 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h1&gt;
+&lt;blockquote&gt;
+&lt;p&gt;MySQL 是现在普遍使用的数据库，但是如果宕机了必然会造成数据丢失。为了保证 MySQL 数据库的可靠性，就要会一些提高可靠性的技术。MySQL 主从热备可以做到实时备份数据。&lt;/p&gt;
+&lt;p&gt;用途：备份，读写分离，高可用和故障切换，MySQL 升级测试&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&#34;原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#原理&#34;&gt;#&lt;/a&gt; 原理&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;作为主服务器的 &lt;code&gt;Master&lt;/code&gt; ，会把自己的每一次改动（每条 sql 语句）都记录到二进制日志 &lt;code&gt;Binarylog&lt;/code&gt;  中&lt;/li&gt;
+&lt;li&gt;作为从服务器的 &lt;code&gt;Slave&lt;/code&gt;  将 &lt;code&gt;Master&lt;/code&gt;  的 &lt;code&gt;Binary log&lt;/code&gt;  拷贝到它的中继日志 &lt;code&gt;relay log&lt;/code&gt;  中，然后 &lt;code&gt;Slave&lt;/code&gt;  自己的 &lt;code&gt;sql线程&lt;/code&gt; 会负责读取这个中继日志，并执行一遍。&lt;/li&gt;
+&lt;li&gt;这样 &lt;code&gt;Slave&lt;/code&gt;  的数据就和 &lt;code&gt;Master&lt;/code&gt;  上的数据相同了。&lt;/li&gt;
+&lt;li&gt;整个过程，MySQL 使用 3 个线程来执行复制同步功能，其中两个线程 &lt;code&gt;Sql线程和IO线程&lt;/code&gt; 在从服务器，另外一个线程 &lt;code&gt;IO线程&lt;/code&gt; 在主服务器。&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;1.jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ ]]></description>
         </item>
     </channel>
 </rss>
