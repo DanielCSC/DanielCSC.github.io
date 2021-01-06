@@ -4,30 +4,30 @@
     <title>The course of true love never did run smooth. • Posts by &#34;jwt&#34; tag</title>
     <link href="https://mfx.icu" />
     <updated>2020-04-20T12:32:51.000Z</updated>
-    <category term="JWT" />
-    <category term="Celery" />
-    <category term="序列化器" />
-    <category term="PayPal" />
-    <category term="ORM" />
-    <category term="vue生命周期" />
-    <category term="Wechat" />
-    <category term="生产环境部署" />
     <category term="UI组件" />
-    <category term="Mysql" />
-    <category term="数据可视化库" />
+    <category term="vue生命周期" />
+    <category term="JWT" />
     <category term="Navicat" />
+    <category term="Mysql" />
+    <category term="序列化器" />
+    <category term="Celery" />
+    <category term="ORM" />
+    <category term="生产环境部署" />
+    <category term="PayPal" />
+    <category term="Wechat" />
+    <category term="数据可视化库" />
     <category term="Docker_Desktop" />
     <category term="Git" />
     <category term="jwt" />
     <category term="OAuth2.0" />
-    <category term="SQL" />
     <category term="WebSocket" />
+    <category term="SQL" />
     <category term="Docker" />
     <category term="redis" />
     <entry>
-        <id>https://mfx.icu/Django/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
+        <id>https://mfx.icu/django/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/</id>
         <title>Django--Jwt的使用</title>
-        <link rel="alternate" href="https://mfx.icu/Django/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
+        <link rel="alternate" href="https://mfx.icu/django/Django--Rest-Framework-Jwt%E7%9A%84%E4%BD%BF%E7%94%A8/"/>
         <content type="html">&lt;h3 id=&#34;1jwt安装配置&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#1jwt安装配置&#34;&gt;#&lt;/a&gt; 1.JWT 安装配置&lt;/h3&gt;
 &lt;ul&gt;
 &lt;li&gt;安装 JWT&lt;/li&gt;
