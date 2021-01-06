@@ -117,12 +117,12 @@ Django--JWT 使用 - Django 框架 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9fa3ffa7d37b3e79c67.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9283ffa7d37b3e65ce0.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c7b93ffa7d37b3e449ee.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c81e3ffa7d37b3e4db4a.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c7fb3ffa7d37b3e4a4d4.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9d33ffa7d37b3e76556.png"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff31e0c3ffa7d37b3366201.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c7b93ffa7d37b3e449ea.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c7b93ffa7d37b3e449f5.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c8923ffa7d37b3e58460.png"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c8b33ffa7d37b3e5b680.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9543ffa7d37b3e6a2e4.jpg"></li>
         </ul>
       </div>
     </header>
@@ -206,7 +206,7 @@ Django--JWT 使用 - Django 框架 |
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">from</span> app01 <span class="token keyword">import</span> views</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">from</span> rest_framework_jwt<span class="token punctuation">.</span>views <span class="token keyword">import</span> obtain_jwt_token</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'register/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">]</span></pre></td></tr></table></figure><ul>
 <li>Postman 测试</li>
 </ul>
-<p><img data-src="C:/Users/12733/Desktop/1.png" alt=""></p>
+<p><img data-src="1.png" alt=""></p>
 <h3 id="6登录及多形式登录"><a class="markdownIt-Anchor" href="#6登录及多形式登录">#</a> 6. 登录及多形式登录</h3>
 <ul>
 <li><code>views.py</code></li>
@@ -217,11 +217,11 @@ Django--JWT 使用 - Django 框架 |
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">from</span> app01 <span class="token keyword">import</span> views</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">from</span> rest_framework_jwt<span class="token punctuation">.</span>views <span class="token keyword">import</span> obtain_jwt_token</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'register/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span>  </pre></td></tr><tr><td data-num="7"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'login/'</span><span class="token punctuation">,</span> obtain_jwt_token<span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre><span class="token punctuation">]</span></pre></td></tr></table></figure><ul>
 <li>Postman 测试登录</li>
 </ul>
-<p><img data-src="C:/Users/12733/Desktop/2.png" alt=""></p>
+<p><img data-src="2.png" alt=""></p>
 <ul>
 <li>Postman 测试多形式登录</li>
 </ul>
-<p><img data-src="C:/Users/12733/Desktop/3.png" alt=""></p>
+<p><img data-src="3.png" alt=""></p>
 <h3 id="7携带token访问所有用户"><a class="markdownIt-Anchor" href="#7携带token访问所有用户">#</a> 7. 携带 token 访问所有用户</h3>
 <ul>
 <li><code>serializers.py</code></li>
@@ -235,7 +235,7 @@ Django--JWT 使用 - Django 框架 |
 <figure class="highlight python"><figcaption data-lang="python"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">from</span> django<span class="token punctuation">.</span>urls <span class="token keyword">import</span> path</pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">from</span> app01 <span class="token keyword">import</span> views</pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">from</span> rest_framework_jwt<span class="token punctuation">.</span>views <span class="token keyword">import</span> obtain_jwt_token</pre></td></tr><tr><td data-num="4"></td><td><pre></pre></td></tr><tr><td data-num="5"></td><td><pre>urlpatterns <span class="token operator">=</span> <span class="token punctuation">[</span></pre></td></tr><tr><td data-num="6"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'register/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span> </pre></td></tr><tr><td data-num="7"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'login/'</span><span class="token punctuation">,</span> obtain_jwt_token<span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="8"></td><td><pre>    path<span class="token punctuation">(</span><span class="token string">'get_user/'</span><span class="token punctuation">,</span> views<span class="token punctuation">.</span>UserInfoView<span class="token punctuation">.</span>as_view<span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">,</span></pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token punctuation">]</span></pre></td></tr></table></figure><ul>
 <li>Postman 测试</li>
 </ul>
-<p><img data-src="C:/Users/12733/Desktop/4.png" alt=""></p>
+<p><img data-src="4.png" alt=""></p>
 
       <div class="tags">
           <a href="/tags/JWT/" rel="tag"><i class="ic i-tag"></i> JWT</a>
@@ -250,7 +250,7 @@ Django--JWT 使用 - Django 框架 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2021-01-06 20:24:45" itemprop="dateModified" datetime="2021-01-06T20:24:45+08:00">2021-01-06</time>
+    <time title="修改时间：2021-01-06 20:27:25" itemprop="dateModified" datetime="2021-01-06T20:27:25+08:00">2021-01-06</time>
   </span>
 </div>
 
@@ -300,7 +300,7 @@ Django--JWT 使用 - Django 框架 |
     <div class="item left">
       
 
-  <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c81e3ffa7d37b3e4db2f.jpg" title="MySQL主从热备">
+  <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c81e3ffa7d37b3e4db4a.jpg" title="MySQL主从热备">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> MySQL</span>
   <h3>MySQL主从热备</h3>
