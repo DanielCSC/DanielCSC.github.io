@@ -115,12 +115,12 @@ MySQL 主从同步 - MySQL - 数据库 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c7fb3ffa7d37b3e4a4c7.jpg"></li>
           <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c8923ffa7d37b3e5846b.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c81e3ffa7d37b3e4db4a.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9283ffa7d37b3e65cc6.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9533ffa7d37b3e6a2d1.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff31e2f3ffa7d37b3367fb9.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9fa3ffa7d37b3e79c63.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff31e0c3ffa7d37b3366203.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c8b33ffa7d37b3e5b676.png"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9533ffa7d37b3e6a2c7.png"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9283ffa7d37b3e65cb4.jpg"></li>
         </ul>
       </div>
     </header>
@@ -235,8 +235,8 @@ MySQL 主从同步 - MySQL - 数据库 |
 <figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">use</span> mysql<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">update</span> <span class="token keyword">user</span> <span class="token keyword">set</span> <span class="token keyword">user</span><span class="token operator">=</span><span class="token string">"新用户名"</span> <span class="token keyword">where</span> <span class="token keyword">user</span><span class="token operator">=</span><span class="token string">"旧用户名"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>flush <span class="token keyword">privileges</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h1 id="配置"><a class="markdownIt-Anchor" href="#配置">#</a> 配置</h1>
 <h2 id="测试环境"><a class="markdownIt-Anchor" href="#测试环境">#</a> 测试环境</h2>
 <ul>
-<li>主服务器：127.0.0.1</li>
-<li>从服务器：127.0.0.1</li>
+<li>主服务器：127.0.0.1:3307</li>
+<li>从服务器：127.0.0.1:3308</li>
 <li>MySQL 版本：8.0</li>
 <li>系统：Win10</li>
 </ul>
@@ -291,7 +291,7 @@ MySQL 主从同步 - MySQL - 数据库 |
 </ol>
 <p><img data-src="17.png" alt=""></p>
 <ol start="2">
-<li>在 <code>主服务器</code> 上新建一个数据库 <code>test</code></li>
+<li>在 <code>主服务器</code> 上新建一个数据库 <code>text</code></li>
 </ol>
 <p><img data-src="18.png" alt=""></p>
 <ol start="3">
@@ -338,7 +338,7 @@ MySQL 主从同步 - MySQL - 数据库 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2021-01-08 20:47:19" itemprop="dateModified" datetime="2021-01-08T20:47:19+08:00">2021-01-08</time>
+    <time title="修改时间：2021-01-08 20:54:50" itemprop="dateModified" datetime="2021-01-08T20:54:50+08:00">2021-01-08</time>
   </span>
 </div>
 
@@ -388,7 +388,7 @@ MySQL 主从同步 - MySQL - 数据库 |
     <div class="item left">
       
 
-  <a href="/Vue/Vue-%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%90%8C%E5%B0%8F%E5%BC%82%E7%9A%84UI%E7%BB%84%E4%BB%B6/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff320893ffa7d37b338002d.jpg" title="UI组件">
+  <a href="/Vue/Vue-%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%90%8C%E5%B0%8F%E5%BC%82%E7%9A%84UI%E7%BB%84%E4%BB%B6/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c9283ffa7d37b3e65ce8.jpg" title="UI组件">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>UI组件</h3>
@@ -398,7 +398,7 @@ MySQL 主从同步 - MySQL - 数据库 |
     <div class="item right">
       
 
-  <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c8dc3ffa7d37b3e5f295.jpg" title="初步了解--Redis">
+  <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c7fb3ffa7d37b3e4a4ac.png" title="初步了解--Redis">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Redis</span>
   <h3>初步了解--Redis</h3>
