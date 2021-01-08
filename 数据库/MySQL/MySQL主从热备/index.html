@@ -30,7 +30,7 @@
 
 
   <title>
-MySQL 主从热备 - MySQL - 数据库 |
+MySQL 主从同步 - MySQL - 数据库 |
 星が優しくあふれている = The course of true love never did run smooth.</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -58,7 +58,7 @@ MySQL 主从热备 - MySQL - 数据库 |
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">MySQL 主从热备
+  <h1 itemprop="name headline">MySQL 主从同步
   </h1>
   
 <div class="meta">
@@ -74,7 +74,7 @@ MySQL 主从热备 - MySQL - 数据库 |
       <i class="ic i-pen"></i>
     </span>
     <span class="text">本文字数</span>
-    <span>343</span>
+    <span>2.8k</span>
     <span class="text">字</span>
   </span>
   <span class="item" title="阅读时长">
@@ -82,7 +82,7 @@ MySQL 主从热备 - MySQL - 数据库 |
       <i class="ic i-clock"></i>
     </span>
     <span class="text">阅读时长</span>
-    <span>1 分钟</span>
+    <span>3 分钟</span>
   </span>
 </div>
 
@@ -115,12 +115,12 @@ MySQL 主从热备 - MySQL - 数据库 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9fa3ffa7d37b3e79c5f.jpg"></li>
           <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c8923ffa7d37b3e5846b.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c81e3ffa7d37b3e4db41.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff31e0c3ffa7d37b3366203.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c98d3ffa7d37b3e6fdc9.jpg"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c8b33ffa7d37b3e5b67b.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c81e3ffa7d37b3e4db4a.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9283ffa7d37b3e65cc6.png"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9533ffa7d37b3e6a2d1.png"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff31e2f3ffa7d37b3367fb9.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9fa3ffa7d37b3e79c63.jpg"></li>
         </ul>
       </div>
     </header>
@@ -171,7 +171,7 @@ MySQL 主从热备 - MySQL - 数据库 |
 
     <h1 id="概述"><a class="markdownIt-Anchor" href="#概述">#</a> 概述</h1>
 <blockquote>
-<p>MySQL 是现在普遍使用的数据库，但是如果宕机了必然会造成数据丢失。为了保证 MySQL 数据库的可靠性，就要会一些提高可靠性的技术。MySQL 主从热备可以做到实时备份数据。</p>
+<p>MySQL 是现在普遍使用的数据库，但是如果宕机了必然会造成数据丢失。为了保证 MySQL 数据库的可靠性，就要会一些提高可靠性的技术。MySQL 主从同步可以做到实时备份数据。</p>
 <p>用途：备份，读写分离，高可用和故障切换，MySQL 升级测试</p>
 </blockquote>
 <h1 id="原理"><a class="markdownIt-Anchor" href="#原理">#</a> 原理</h1>
@@ -182,7 +182,152 @@ MySQL 主从热备 - MySQL - 数据库 |
 <li>整个过程，MySQL 使用 3 个线程来执行复制同步功能，其中两个线程 <code>Sql线程和IO线程</code> 在从服务器，另外一个线程 <code>IO线程</code> 在主服务器。</li>
 </ul>
 <p><img data-src="1.jpg" alt=""></p>
-
+<h1 id="准备工作win10安装多个mysql"><a class="markdownIt-Anchor" href="#准备工作win10安装多个mysql">#</a> 准备工作，win10 安装多个 MySQL</h1>
+<ol>
+<li>下载 MySQL 免安装版，点<span class="exturl" data-url="aHR0cHM6Ly9kZXYubXlzcWwuY29tL2Rvd25sb2Fkcy9teXNxbC8=">这里</span>进行下载</li>
+</ol>
+<p><img data-src="2.png" alt=""></p>
+<ol start="2">
+<li>解压下载好的 ZIP 文件</li>
+</ol>
+<p><img data-src="3.png" alt=""></p>
+<ol start="3">
+<li>在解压后的文件夹下新建 my.ini 文件。内容参考如下：</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token punctuation">[</span>mysql<span class="token punctuation">]</span></pre></td></tr><tr><td data-num="2"></td><td><pre> </pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token comment"># 设置 mysql 客户端默认字符集</span></pre></td></tr><tr><td data-num="4"></td><td><pre> </pre></td></tr><tr><td data-num="5"></td><td><pre><span class="token keyword">default</span><span class="token operator">-</span><span class="token keyword">character</span><span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">=</span>utf8 </pre></td></tr><tr><td data-num="6"></td><td><pre> </pre></td></tr><tr><td data-num="7"></td><td><pre><span class="token punctuation">[</span>mysqld<span class="token punctuation">]</span></pre></td></tr><tr><td data-num="8"></td><td><pre> </pre></td></tr><tr><td data-num="9"></td><td><pre><span class="token comment">#设置端口</span></pre></td></tr><tr><td data-num="10"></td><td><pre> </pre></td></tr><tr><td data-num="11"></td><td><pre>port <span class="token operator">=</span> <span class="token number">3307</span></pre></td></tr><tr><td data-num="12"></td><td><pre> </pre></td></tr><tr><td data-num="13"></td><td><pre><span class="token comment"># 设置 mysql 的安装目录</span></pre></td></tr><tr><td data-num="14"></td><td><pre> </pre></td></tr><tr><td data-num="15"></td><td><pre>basedir<span class="token operator">=</span>D:\ceshi\mysql2\mysql<span class="token operator">-</span><span class="token number">8.0</span><span class="token number">.22</span><span class="token operator">-</span>winx64</pre></td></tr><tr><td data-num="16"></td><td><pre> </pre></td></tr><tr><td data-num="17"></td><td><pre><span class="token comment"># 设置 mysql 数据库的数据的存放目录</span></pre></td></tr><tr><td data-num="18"></td><td><pre> </pre></td></tr><tr><td data-num="19"></td><td><pre>datadir<span class="token operator">=</span>D:\ceshi\mysql2\mysql<span class="token operator">-</span><span class="token number">8.0</span><span class="token number">.22</span><span class="token operator">-</span>winx64\<span class="token keyword">data</span></pre></td></tr><tr><td data-num="20"></td><td><pre> </pre></td></tr><tr><td data-num="21"></td><td><pre>sql_mode<span class="token operator">=</span>NO_ENGINE_SUBSTITUTION<span class="token punctuation">,</span>STRICT_TRANS_TABLES </pre></td></tr><tr><td data-num="22"></td><td><pre> </pre></td></tr><tr><td data-num="23"></td><td><pre><span class="token keyword">character</span><span class="token operator">-</span><span class="token keyword">set</span><span class="token operator">-</span>server <span class="token operator">=</span> utf8mb4</pre></td></tr><tr><td data-num="24"></td><td><pre> </pre></td></tr><tr><td data-num="25"></td><td><pre>performance_schema_max_table_instances <span class="token operator">=</span> <span class="token number">600</span></pre></td></tr><tr><td data-num="26"></td><td><pre> </pre></td></tr><tr><td data-num="27"></td><td><pre>table_definition_cache <span class="token operator">=</span> <span class="token number">400</span></pre></td></tr></table></figure><ul>
+<li>目录结构</li>
+</ul>
+<p><img data-src="4.png" alt=""></p>
+<ol start="4">
+<li>管理员身份运行 cmd, 并将切换到你解压过后的文件的 bin 目录下。</li>
+</ol>
+<p><img data-src="5.png" alt=""></p>
+<ol start="5">
+<li>初始化 MySQL</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>mysqld <span class="token comment">--defaults-file=D:\ceshi\mysql2\mysql-8.0.22-winx64\my.ini --initialize --console</span></pre></td></tr></table></figure><div class="note info">
+<p>执行完毕后，文件结构多了一个 data 目录，并记录初始化密码，后面第一次进入 mysql 修改密码需要</p>
+</div>
+<p><img data-src="6.png" alt=""></p>
+<ol start="6">
+<li>初始化 MySQL 服务</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>mysqld install MySQL2 <span class="token comment">--defaults-file="D:\ceshi\mysql2\mysql-8.0.22-winx64\my.ini"</span></pre></td></tr></table></figure><p><img data-src="7.png" alt=""></p>
+<ol start="7">
+<li>启动 MySQL 服务</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>net <span class="token keyword">start</span> MySQL2</pre></td></tr></table></figure><p><img data-src="8.png" alt=""></p>
+<ol start="8">
+<li>以 root 身份进入 MySQL，输入初始化 MySQL 时系统生成的密码</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>mysql <span class="token operator">-</span>uroot <span class="token operator">-</span>p  <span class="token operator">-</span>P3307 <span class="token punctuation">(</span>指定端口<span class="token punctuation">)</span></pre></td></tr></table></figure><p><img data-src="9.png" alt=""></p>
+<ol start="9">
+<li>修改密码</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">ALTER</span> <span class="token keyword">USER</span> <span class="token string">'root'</span><span class="token variable">@'localhost'</span> IDENTIFIED <span class="token keyword">WITH</span> mysql_native_password <span class="token keyword">BY</span> <span class="token string">'新密码'</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p><img data-src="10.png" alt=""></p>
+<ol start="10">
+<li>密码修改后刷新权限，就可以使用 mysql 了</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>flush <span class="token keyword">privileges</span><span class="token punctuation">;</span></pre></td></tr></table></figure><p><img data-src="11.png" alt=""></p>
+<ul>
+<li>至此 <code>主服务器</code> 安装完毕， <code>从服务器</code> 以此安装并更改从服务器用户名</li>
+</ul>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">use</span> mysql<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">update</span> <span class="token keyword">user</span> <span class="token keyword">set</span> <span class="token keyword">user</span><span class="token operator">=</span><span class="token string">"新用户名"</span> <span class="token keyword">where</span> <span class="token keyword">user</span><span class="token operator">=</span><span class="token string">"旧用户名"</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>flush <span class="token keyword">privileges</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h1 id="配置"><a class="markdownIt-Anchor" href="#配置">#</a> 配置</h1>
+<h2 id="测试环境"><a class="markdownIt-Anchor" href="#测试环境">#</a> 测试环境</h2>
+<ul>
+<li>主服务器：127.0.0.1</li>
+<li>从服务器：127.0.0.1</li>
+<li>MySQL 版本：8.0</li>
+<li>系统：Win10</li>
+</ul>
+<h2 id="主服务器配置"><a class="markdownIt-Anchor" href="#主服务器配置">#</a> 主服务器配置</h2>
+<ol>
+<li>配置 <code>my.ini</code></li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>log<span class="token operator">-</span>bin<span class="token operator">=</span>master<span class="token operator">-</span>log<span class="token operator">-</span>bin		<span class="token comment"># 开启二进制日志功能，可以随便取</span></pre></td></tr><tr><td data-num="2"></td><td><pre>server<span class="token operator">-</span>id<span class="token operator">=</span><span class="token number">1</span>			<span class="token comment"># 同一局域网内注意要唯一</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">innodb</span><span class="token operator">-</span><span class="token keyword">file</span><span class="token operator">-</span>per<span class="token operator">-</span><span class="token keyword">table</span><span class="token operator">=</span><span class="token keyword">ON</span></pre></td></tr></table></figure><ol start="2">
+<li>重启服务，并进入 MySQL</li>
+</ol>
+<p><img data-src="12.png" alt=""></p>
+<ol start="3">
+<li>查看主服务器状态信息</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">show</span> master <span class="token keyword">status</span><span class="token punctuation">;</span></pre></td></tr></table></figure><div class="note info">
+<p>这里的文件名和位置值会在后面的配置中用到</p>
+</div>
+<p><img data-src="13.png" alt=""></p>
+<ol start="4">
+<li>给复制用户授权，并刷新权限</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">update</span> <span class="token keyword">user</span> <span class="token keyword">set</span> host<span class="token operator">=</span><span class="token string">'%'</span> <span class="token keyword">where</span> <span class="token keyword">user</span><span class="token operator">=</span><span class="token string">'text'</span><span class="token punctuation">;</span>　　　　<span class="token comment"># '%' 代表所有局域 IP</span></pre></td></tr><tr><td data-num="2"></td><td><pre>flush <span class="token keyword">privileges</span><span class="token punctuation">;</span></pre></td></tr></table></figure><h2 id="从服务器配置"><a class="markdownIt-Anchor" href="#从服务器配置">#</a> 从服务器配置</h2>
+<ol>
+<li>配置 <code>my.ini</code> ，重启服务，并进入 MySQL</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>log<span class="token operator">-</span>bin<span class="token operator">=</span>slave<span class="token operator">-</span>log<span class="token operator">-</span>bin		<span class="token comment"># 开启二进制日志功能，以备 Slave 作为其它 Slave 的 Master 时使用</span></pre></td></tr><tr><td data-num="2"></td><td><pre>relay_log<span class="token operator">=</span>relay<span class="token operator">-</span>log		<span class="token comment"># relay_log 配置中继日志</span></pre></td></tr><tr><td data-num="3"></td><td><pre>relay_log_index<span class="token operator">=</span>relay<span class="token operator">-</span>log<span class="token punctuation">.</span><span class="token keyword">index</span></pre></td></tr><tr><td data-num="4"></td><td><pre>server<span class="token operator">-</span>id<span class="token operator">=</span><span class="token number">2</span>			<span class="token comment"># 同一局域网内注意要唯一</span></pre></td></tr><tr><td data-num="5"></td><td><pre>innodb_file_per_table<span class="token operator">=</span><span class="token keyword">ON</span></pre></td></tr></table></figure><ol start="2">
+<li>用主服务器提供的复制用户连接主服务器</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>change master <span class="token keyword">to</span> master_host<span class="token operator">=</span><span class="token string">'127.0.0.1'</span><span class="token punctuation">,</span>master_port<span class="token operator">=</span><span class="token number">3307</span><span class="token punctuation">,</span>master_user<span class="token operator">=</span><span class="token string">'root'</span><span class="token punctuation">,</span>master_password<span class="token operator">=</span><span class="token string">'000000'</span><span class="token punctuation">,</span>master_log_file<span class="token operator">=</span><span class="token string">'master-log-bin.000002'</span><span class="token punctuation">,</span>master_log_pos<span class="token operator">=</span><span class="token number">156</span><span class="token punctuation">;</span></pre></td></tr></table></figure><details class="primary"><summary>参数说明</summary><div>
+<p><strong>master_host</strong> ：Master 的地址</p>
+<p><strong>master_port</strong>：Master 的端口号</p>
+<p><strong>master_user</strong>：Master 的用户名</p>
+<p><strong>master_password</strong>：Master 的密码</p>
+<p><strong>master_log_file</strong>：指定 Slave，从哪个日志文件开始复制数据</p>
+<p><strong>master_log_pos</strong>：从哪个 Position 开始读</p>
+<p><strong>master_connect_retry</strong>：如果连接失败，重试的时间间隔，单位是秒，默认是 60 秒</p>
+</div></details>
+<p><img data-src="14.png" alt=""></p>
+<ol start="3">
+<li>启动复制线程，此时会启动 IO Thread 和 SQL Thread 这两个线程</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>statr slave<span class="token punctuation">;</span>	<span class="token comment"># 启动</span></pre></td></tr><tr><td data-num="2"></td><td><pre>stop slave<span class="token punctuation">;</span>	<span class="token comment"># 停止</span></pre></td></tr></table></figure><ol start="4">
+<li>查看从服务器状态信息</li>
+</ol>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre><span class="token keyword">show</span> slave <span class="token keyword">status</span>\G<span class="token punctuation">;</span></pre></td></tr></table></figure><div class="note info">
+<p>Slave_IO_Running: Yes， Slave_SQL_Running: Yes，两个线程必须为 YES</p>
+</div>
+<p><img data-src="16.png" alt=""></p>
+<h1 id="测试"><a class="markdownIt-Anchor" href="#测试">#</a> 测试</h1>
+<ol>
+<li>此时 <code>主服务器</code> 和 <code>从服务器</code> ，都没有数据库</li>
+</ol>
+<p><img data-src="17.png" alt=""></p>
+<ol start="2">
+<li>在 <code>主服务器</code> 上新建一个数据库 <code>test</code></li>
+</ol>
+<p><img data-src="18.png" alt=""></p>
+<ol start="3">
+<li>在 <code>从服务器</code> 上查看，可以看见主从服务器已经完成同步，大功告成</li>
+</ol>
+<p><img data-src="19.png" alt=""></p>
+<h1 id="常见问题"><a class="markdownIt-Anchor" href="#常见问题">#</a> 常见问题</h1>
+<ul>
+<li>
+<p>当我们配置好 MySQL 主从同步时，原本是可以实现主从同步的，但是重启机器后就发现无法同步了。</p>
+</li>
+<li>
+<p>MySQL Replication 中 slave 机器上有两个关键的线程，死一个都不行，一个是  <code>Slave_IO_Running</code> ，一个是 <code>Slave_SQL_Running</code> 。一个负责与主机的 IO 通信，一个负责自己的 slave mysql 语句执行。</p>
+</li>
+</ul>
+<ol>
+<li>如果是 <code>Slave_SQL_Running：No</code></li>
+</ol>
+<ul>
+<li>解决办法</li>
+</ul>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>stop slave<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre><span class="token keyword">set</span> <span class="token keyword">global</span> sql_slave_skip_counter<span class="token operator">=</span><span class="token number">1</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre><span class="token keyword">start</span> slave<span class="token punctuation">;</span></pre></td></tr></table></figure><ol start="2">
+<li>如果是 <code>Slave_IO_Running：No</code></li>
+</ol>
+<ul>
+<li>
+<p>查看主服务器状态</p>
+</li>
+<li>
+<p>查看从服务器状态</p>
+</li>
+<li>
+<p>一般情况下是日志没对上</p>
+</li>
+</ul>
+<figure class="highlight sql"><figcaption data-lang="SQL"></figcaption><table><tr><td data-num="1"></td><td><pre>stop slave<span class="token punctuation">;</span></pre></td></tr><tr><td data-num="2"></td><td><pre>change master <span class="token keyword">to</span> master_log_file<span class="token operator">=</span><span class="token string">'mysql-bin.000026'</span><span class="token punctuation">,</span>master_log_pos<span class="token operator">=</span><span class="token number">0</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="3"></td><td><pre>slave <span class="token keyword">start</span><span class="token punctuation">;</span></pre></td></tr><tr><td data-num="4"></td><td><pre><span class="token keyword">show</span> slave <span class="token keyword">status</span>\G<span class="token punctuation">;</span></pre></td></tr></table></figure>
   </div>
 
    <footer>
@@ -193,7 +338,7 @@ MySQL 主从热备 - MySQL - 数据库 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">更新于</span>
-    <time title="修改时间：2021-01-06 20:56:48" itemprop="dateModified" datetime="2021-01-06T20:56:48+08:00">2021-01-06</time>
+    <time title="修改时间：2021-01-08 20:47:19" itemprop="dateModified" datetime="2021-01-08T20:47:19+08:00">2021-01-08</time>
   </span>
 </div>
 
@@ -224,7 +369,7 @@ MySQL 主从热备 - MySQL - 数据库 |
   </li>
   <li class="link">
     <strong>本文链接：</strong>
-    <a href="https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/" title="MySQL 主从热备">https://mfx.icu/数据库/MySQL/MySQL主从热备/</a>
+    <a href="https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/" title="MySQL 主从同步">https://mfx.icu/数据库/MySQL/MySQL主从热备/</a>
   </li>
   <li class="license">
     <strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！
@@ -243,7 +388,7 @@ MySQL 主从热备 - MySQL - 数据库 |
     <div class="item left">
       
 
-  <a href="/Vue/Vue-%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%90%8C%E5%B0%8F%E5%BC%82%E7%9A%84UI%E7%BB%84%E4%BB%B6/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c98d3ffa7d37b3e6fdc5.png" title="UI组件">
+  <a href="/Vue/Vue-%E4%BD%BF%E7%94%A8%E5%A4%A7%E5%90%8C%E5%B0%8F%E5%BC%82%E7%9A%84UI%E7%BB%84%E4%BB%B6/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff320893ffa7d37b338002d.jpg" title="UI组件">
   <span class="type">上一篇</span>
   <span class="category"><i class="ic i-flag"></i> Vue</span>
   <h3>UI组件</h3>
@@ -253,7 +398,7 @@ MySQL 主从热备 - MySQL - 数据库 |
     <div class="item right">
       
 
-  <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff320893ffa7d37b3380032.jpg" title="初步了解--Redis">
+  <a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c8dc3ffa7d37b3e5f295.jpg" title="初步了解--Redis">
   <span class="type">下一篇</span>
   <span class="category"><i class="ic i-flag"></i> Redis</span>
   <h3>初步了解--Redis</h3>
@@ -275,11 +420,11 @@ MySQL 主从热备 - MySQL - 数据库 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="文章目录">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text"> 概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text"> 原理</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text"> 概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text"> 原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9Cwin10%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAmysql"><span class="toc-number">3.</span> <span class="toc-text"> 准备工作，win10 安装多个 MySQL</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE"><span class="toc-number">4.</span> <span class="toc-text"> 配置</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95%E7%8E%AF%E5%A2%83"><span class="toc-number">4.1.</span> <span class="toc-text"> 测试环境</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%B8%BB%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">4.2.</span> <span class="toc-text"> 主服务器配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E4%BB%8E%E6%9C%8D%E5%8A%A1%E5%99%A8%E9%85%8D%E7%BD%AE"><span class="toc-number">4.3.</span> <span class="toc-text"> 从服务器配置</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95"><span class="toc-number">5.</span> <span class="toc-text"> 测试</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">6.</span> <span class="toc-text"> 常见问题</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="系列文章">
         <ul>
-          <li class="active"><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/" rel="bookmark" title="MySQL主从热备">MySQL主从热备</a></li>
+          <li class="active"><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/" rel="bookmark" title="MySQL主从同步">MySQL主从同步</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="站点概览">
@@ -393,13 +538,13 @@ MySQL 主从热备 - MySQL - 数据库 |
     <span class="post-meta-item-icon">
       <i class="ic i-chart-area"></i>
     </span>
-    <span title="站点总字数">70k 字</span>
+    <span title="站点总字数">73k 字</span>
 
     <span class="post-meta-divider">|</span>
     <span class="post-meta-item-icon">
       <i class="ic i-coffee"></i>
     </span>
-    <span title="站点阅读时长">1:04</span>
+    <span title="站点阅读时长">1:06</span>
   </div>
   <div class="powered-by">
     基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span>
