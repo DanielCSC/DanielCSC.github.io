@@ -4,29 +4,29 @@
         <title>The course of true love never did run smooth. • Posts by &#34;jwt&#34; tag</title>
         <link>https://mfx.icu</link>
         <description>人生海海  山山而川  不过尔尔</description>
-        <language>zh-CN</language>
+        <language>ja</language>
         <pubDate>Wed, 22 Apr 2020 20:22:01 +0800</pubDate>
         <lastBuildDate>Wed, 22 Apr 2020 20:22:01 +0800</lastBuildDate>
-        <category>JWT</category>
         <category>Celery</category>
-        <category>序列化器</category>
+        <category>JWT</category>
         <category>ORM</category>
-        <category>生产环境部署</category>
+        <category>序列化器</category>
         <category>PayPal</category>
+        <category>生产环境部署</category>
         <category>Wechat</category>
-        <category>Mysql</category>
-        <category>Navicat</category>
         <category>UI组件</category>
         <category>vue生命周期</category>
+        <category>Navicat</category>
+        <category>Mysql</category>
         <category>Docker_Desktop</category>
-        <category>jwt</category>
-        <category>Git</category>
         <category>数据可视化库</category>
+        <category>Git</category>
+        <category>jwt</category>
         <category>OAuth2.0</category>
         <category>SQL</category>
         <category>WebSocket</category>
-        <category>redis</category>
         <category>Docker</category>
+        <category>redis</category>
         <item>
             <guid isPermalink="true">https://mfx.icu/Django%E6%A1%86%E6%9E%B6/Django-JWT%E4%BD%BF%E7%94%A8/</guid>
             <title>Django--JWT使用</title>
