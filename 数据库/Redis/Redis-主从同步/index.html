@@ -24,15 +24,15 @@
 <link rel="stylesheet" href="/css/app.css?v=0.2.5">
 
   
-  <meta name="keywords" content="Docker_Desktop" />
+  <meta name="keywords" content="redis" />
 
 
-<link rel="canonical" href="https://mfx.icu/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/">
+<link rel="canonical" href="https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5/">
 
 
 
   <title>
-Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
+Redis-- 主从同步 - Redis - 数据库 |
 星が優しくあふれている = The course of true love never did run smooth.</title>
 <meta name="generator" content="Hexo 5.2.0"></head>
 <body itemscope itemtype="http://schema.org/WebPage">
@@ -60,23 +60,23 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
         <div id="brand">
           <div class="pjax">
           
-  <h1 itemprop="name headline">Docker_Desktop 使用 Mysql、Redis
+  <h1 itemprop="name headline">Redis-- 主从同步
   </h1>
   
 <div class="meta">
-  <span class="item" title="作成日：2020-12-05 09:29:08">
+  <span class="item" title="作成日：2020-11-04 21:15:09">
     <span class="icon">
       <i class="ic i-calendar"></i>
     </span>
     <span class="text">投稿日</span>
-    <time itemprop="dateCreated datePublished" datetime="2020-12-05T09:29:08+08:00">2020-12-05</time>
+    <time itemprop="dateCreated datePublished" datetime="2020-11-04T21:15:09+08:00">2020-11-04</time>
   </span>
   <span class="item" title="単語数">
     <span class="icon">
       <i class="ic i-pen"></i>
     </span>
     <span class="text">単語数</span>
-    <span>307</span>
+    <span>776</span>
     <span class="text">単語</span>
   </span>
   <span class="item" title="読書の時間">
@@ -117,12 +117,12 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
       </div>
       <div id="imgs" class="pjax">
         <ul>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9533ffa7d37b3e6a2dd.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c98d3ffa7d37b3e6fdc5.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c85f3ffa7d37b3e5392c.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c8b33ffa7d37b3e5b676.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9d33ffa7d37b3e7654b.png"></li>
-          <li class="item" data-background-image="https://pic.downk.cc/item/5ff320893ffa7d37b338002f.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9283ffa7d37b3e65ce8.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c7fb3ffa7d37b3e4a4d4.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c98d3ffa7d37b3e6fdbb.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c81e3ffa7d37b3e4db41.jpg"></li>
+          <li class="item" data-background-image="https://img.imgdb.cn/item/6001973a3ffa7d37b36bda66.jpg"></li>
+          <li class="item" data-background-image="https://pic.downk.cc/item/5ff1c9d33ffa7d37b3e76542.png"></li>
         </ul>
       </div>
     </header>
@@ -148,12 +148,15 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
 <div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList">
 <i class="ic i-home"></i>
 <span><a href="/">ホーム</a></span><i class="ic i-angle-right"></i>
-<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/" itemprop="item" rel="index" title="カテゴリ 技术大杂烩"><span itemprop="name">技术大杂烩</span></a>
+<span  itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/" itemprop="item" rel="index" title="カテゴリ 数据库"><span itemprop="name">数据库</span></a>
 <meta itemprop="position" content="1" /></span>
+<i class="ic i-angle-right"></i>
+<span  class="current" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem"><a href="/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/" itemprop="item" rel="index" title="カテゴリ Redis"><span itemprop="name">Redis</span></a>
+<meta itemprop="position" content="2" /></span>
 </div>
 
     <article itemscope itemtype="http://schema.org/Article" class="post block" lang="ja">
-  <link itemprop="mainEntityOfPage" href="https://mfx.icu/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/">
+  <link itemprop="mainEntityOfPage" href="https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5/">
 
   <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
     <meta itemprop="image" content="/images/avatar.jpg">
@@ -168,31 +171,73 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
   <div class="body md" itemprop="articleBody">
     
 
-    <h1 id="docker-desktop使用mysql"><a class="markdownIt-Anchor" href="#docker-desktop使用mysql">#</a> Docker Desktop 使用 Mysql</h1>
+    <h1 id="概述"><a class="markdownIt-Anchor" href="#概述">#</a> 概述</h1>
+<h1 id="原理"><a class="markdownIt-Anchor" href="#原理">#</a> 原理</h1>
+<ul>
+<li>Slave 服务启动，主动连接 Master，并发送 <code>SYNC</code>  命令，请求初始化同步</li>
+<li>Master 收到 SYNC 后，执行 <code>BGSAVE</code>  命令生成 RDB 文件，并使用缓冲区记录此后执行的所有写命令</li>
+<li>Master 完成 RDB 文件后，将其发送给所有 Slave 服务器</li>
+<li>Slave 服务器接收到 RDB 文件后，删除内存中旧的缓存数据，并装载 RDB 文件</li>
+<li>Master 在发送完 RDB 后，即刻向所有 Slave 服务器发送缓存中的写命令</li>
+<li>至此初次连接同步完成，后续进行 <code>增量同步</code></li>
+</ul>
+<p><img data-src="2.png" alt=""></p>
+<h1 id="准备工作win10安装多个redis"><a class="markdownIt-Anchor" href="#准备工作win10安装多个redis">#</a> 准备工作，Win10 安装多个 redis</h1>
 <ol>
-<li>拉取镜像</li>
+<li>下载 Redis 免安装版</li>
 </ol>
-<figure class="highlight dockerfile"><figcaption data-lang="Docker"></figcaption><table><tr><td data-num="1"></td><td><pre>docker pull mysql</pre></td></tr></table></figure><ol start="2">
-<li>启动镜像，第一次启动最少需要指定 <code>MYSQL_ROOT_PASSWORD</code></li>
+<ul>
+<li>点击<span class="exturl" data-url="aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMXhBSHZQRm1nQUhBd1gxT2NHNl96Rmc=">这里</span>进行下载</li>
+<li><span class="label primary">提取码</span>：byjt</li>
+</ul>
+<ol start="2">
+<li>将压缩包分别解压到两个文件夹，在 <code>redis.windows.conf</code>  中修改端口号为： <code>6380与6381</code></li>
 </ol>
-<figure class="highlight dockerfile"><figcaption data-lang="Docker"></figcaption><table><tr><td data-num="1"></td><td><pre>docker run <span class="token punctuation">-</span><span class="token punctuation">-</span>name mysql <span class="token punctuation">-</span>p 3306<span class="token punctuation">:</span>3306 <span class="token punctuation">-</span>e MYSQL_ROOT_PASSWORD=000 <span class="token punctuation">-</span>d mysql</pre></td></tr></table></figure><p><img data-src="1.png" alt=""></p>
-<ol start="3">
-<li>运行 Mysql</li>
-</ol>
-<figure class="highlight dockerfile"><figcaption data-lang="Docker"></figcaption><table><tr><td data-num="1"></td><td><pre>docker exec <span class="token punctuation">-</span>it mysql mysql <span class="token punctuation">-</span>uroot <span class="token punctuation">-</span>p000</pre></td></tr></table></figure><p><img data-src="2.png" alt=""></p>
-<h1 id="docker-desktop使用redis"><a class="markdownIt-Anchor" href="#docker-desktop使用redis">#</a> Docker Desktop 使用 Redis</h1>
+<p><img data-src="1.png" alt=""></p>
+<h1 id="配置主从"><a class="markdownIt-Anchor" href="#配置主从">#</a> 配置主从</h1>
 <ol>
-<li>拉取镜像</li>
+<li>测试环境</li>
 </ol>
-<figure class="highlight dockerfile"><figcaption data-lang="Docker"></figcaption><table><tr><td data-num="1"></td><td><pre>docker pull redis</pre></td></tr></table></figure><p>2. 启动镜像</p>
-<figure class="highlight dockerfile"><figcaption data-lang="Docker"></figcaption><table><tr><td data-num="1"></td><td><pre>docker run <span class="token punctuation">-</span>it <span class="token punctuation">-</span>p 6380<span class="token punctuation">:</span>6379 redis</pre></td></tr></table></figure><p><img data-src="3.png" alt=""></p>
-<ol start="3">
-<li>运行 Redis</li>
+<ul>
+<li>主服务器：127.0.0.1:6380</li>
+<li>从服务器：127.0.0.1:6381</li>
+<li>Redis 版本： 3.2</li>
+<li>系统：Win10</li>
+</ul>
+<ol start="2">
+<li>Redis Slaveof 命令</li>
 </ol>
-<figure class="highlight dockerfile"><figcaption data-lang="Docker"></figcaption><table><tr><td data-num="1"></td><td><pre>redis<span class="token punctuation">-</span>cli <span class="token punctuation">-</span>p 6380			<span class="token comment"># 指定端口，可开启多个 redis 服务，互不影响，本地服务均可开启</span></pre></td></tr></table></figure><p><img data-src="4.png" alt=""></p>
+<ul>
+<li>通过下面的命令，可以将当前服务器转变为指定服务器的从服务器</li>
+<li>如果当前服务器已经是某个主服务器的从服务器，那么会让当前服务器停止对旧主服务器的同步，丢弃旧数据集，转而开始对新主服务器进行同步</li>
+</ul>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre>slaveof host port</pre></td></tr></table></figure><ul>
+<li>
+<p>另外，对一个从服务器执行下面的命令，会使这个从服务器关闭复制功能，并将从服务器转变回主服务器，原来同步所得的数据集不会被丢弃</p>
+</li>
+<li>
+<p>利用 <code>不会丢弃同步所得数据集这个特性</code> ，可以在主服务器失败的时候，将从服务器用作新的主服务器，从而实现无间断运行</p>
+</li>
+</ul>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre>slaveof no one</pre></td></tr></table></figure><ol start="3">
+<li>启动 <code>Slave</code></li>
+</ol>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre>redis-server --port 6381	#	启动服务器</pre></td></tr><tr><td data-num="2"></td><td><pre>redis-cli -p 6381		#	启动客户端</pre></td></tr></table></figure><p><img data-src="3.png" alt=""></p>
+<ol start="4">
+<li>开启数据同步</li>
+</ol>
+<ul>
+<li>在 <code>Slave</code>  的客户端输入下面命令</li>
+</ul>
+<figure class="highlight markdown"><figcaption data-lang="markdown"></figcaption><table><tr><td data-num="1"></td><td><pre>slaveof 127.0.0.1 6380		#	 设置主从，6380是Master，6381是Slave</pre></td></tr></table></figure><p><img data-src="5.png" alt=""></p>
+<h1 id="测试"><a class="markdownIt-Anchor" href="#测试">#</a> 测试</h1>
+<ul>
+<li>由图可见，已经完成主从同步🤞</li>
+</ul>
+<p><img data-src="6.png" alt=""></p>
 
       <div class="tags">
-          <a href="/tags/Docker-Desktop/" rel="tag"><i class="ic i-tag"></i> Docker_Desktop</a>
+          <a href="/tags/redis/" rel="tag"><i class="ic i-tag"></i> redis</a>
       </div>
   </div>
 
@@ -204,7 +249,7 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
       <i class="ic i-calendar-check"></i>
     </span>
     <span class="text">編集日</span>
-    <time title="修正日：2021-01-06 18:54:48" itemprop="dateModified" datetime="2021-01-06T18:54:48+08:00">2021-01-06</time>
+    <time title="修正日：2021-01-21 19:39:20" itemprop="dateModified" datetime="2021-01-21T19:39:20+08:00">2021-01-21</time>
   </span>
 </div>
 
@@ -235,7 +280,7 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
   </li>
   <li class="link">
     <strong>記事へのリンク：</strong>
-    <a href="https://mfx.icu/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/" title="Docker_Desktop 使用 Mysql、Redis">https://mfx.icu/技术大杂烩/Docker-Desktop使用Mysql、Redis/</a>
+    <a href="https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5/" title="Redis-- 主从同步">https://mfx.icu/数据库/Redis/Redis-主从同步/</a>
   </li>
   <li class="license">
     <strong>著作権表示： </strong>このブログ内のすべての記事は、特別な記載がない限り <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> の下のライセンスで保護されています。
@@ -254,20 +299,20 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
     <div class="item left">
       
 
-  <a href="/Django%E6%A1%86%E6%9E%B6/Django-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c85f3ffa7d37b3e53939.jpg" title="Django + Uwsgi + Nginx 的生产环境部署">
+  <a href="/%E5%B7%A5%E5%85%B7/NavicatPremium15%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/" itemprop="url" rel="prev" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c7b93ffa7d37b3e44a0e.jpg" title="Navicat Premium 15安装激活">
   <span class="type">前の記事</span>
-  <span class="category"><i class="ic i-flag"></i> Django 框架</span>
-  <h3>Django + Uwsgi + Nginx 的生产环境部署</h3>
+  <span class="category"><i class="ic i-flag"></i> 工具</span>
+  <h3>Navicat Premium 15安装激活</h3>
   </a>
 
     </div>
     <div class="item right">
       
 
-  <a href="/Python/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;pic.downk.cc&#x2F;item&#x2F;5ff1c8923ffa7d37b3e58460.png" title="垃圾回收机制">
+  <a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/" itemprop="url" rel="next" data-background-image="https:&#x2F;&#x2F;img.imgdb.cn&#x2F;item&#x2F;6001971f3ffa7d37b36bc8cb.png" title="SQL--一切皆关系">
   <span class="type">次の記事</span>
-  <span class="category"><i class="ic i-flag"></i> Python</span>
-  <h3>垃圾回收机制</h3>
+  <span class="category"><i class="ic i-flag"></i> 技术大杂烩</span>
+  <h3>SQL--一切皆关系</h3>
   </a>
 
     </div>
@@ -286,11 +331,11 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
   <div class="panels">
     <div class="inner">
       <div class="contents panel pjax" data-title="見出し">
-          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#docker-desktop%E4%BD%BF%E7%94%A8mysql"><span class="toc-number">1.</span> <span class="toc-text"> Docker Desktop 使用 Mysql</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#docker-desktop%E4%BD%BF%E7%94%A8redis"><span class="toc-number">2.</span> <span class="toc-text"> Docker Desktop 使用 Redis</span></a></li></ol>
+          <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%A6%82%E8%BF%B0"><span class="toc-number">1.</span> <span class="toc-text"> 概述</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E7%90%86"><span class="toc-number">2.</span> <span class="toc-text"> 原理</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9Cwin10%E5%AE%89%E8%A3%85%E5%A4%9A%E4%B8%AAredis"><span class="toc-number">3.</span> <span class="toc-text"> 准备工作，Win10 安装多个 redis</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%BB%E4%BB%8E"><span class="toc-number">4.</span> <span class="toc-text"> 配置主从</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E6%B5%8B%E8%AF%95"><span class="toc-number">5.</span> <span class="toc-text"> 测试</span></a></li></ol>
       </div>
       <div class="related panel pjax" data-title="関連記事">
         <ul>
-          <li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/RESTfulAPI%E8%A7%84%E8%8C%83/" rel="bookmark" title="RESTful API设计规范">RESTful API设计规范</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/OAuth2-0%E7%9A%84%E5%9B%9B%E7%A7%8D%E6%8E%88%E6%9D%83%E6%A8%A1%E5%BC%8F/" rel="bookmark" title="OAuth2.0的四种授权模式">OAuth2.0的四种授权模式</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/JWT/" rel="bookmark" title="JWT--JSON WEB TOKEN">JWT--JSON WEB TOKEN</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/" rel="bookmark" title="SQL--一切皆关系">SQL--一切皆关系</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/%E5%9C%A8Ubuntu%E4%B8%AD%E5%AE%89%E8%A3%85Docker%E5%92%8Cdocker%E7%9A%84%E4%BD%BF%E7%94%A8/" rel="bookmark" title="Ubuntu安装Docker和docker的使用">Ubuntu安装Docker和docker的使用</a></li><li class="active"><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/Docker-Desktop%E4%BD%BF%E7%94%A8Mysql%E3%80%81Redis/" rel="bookmark" title="Docker_Desktop使用Mysql、Redis">Docker_Desktop使用Mysql、Redis</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/Git%E5%9F%BA%E6%9C%AC%E5%91%BD%E4%BB%A4/" rel="bookmark" title="Git基本命令">Git基本命令</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/RBAC-%E6%9D%83%E9%99%90%E6%8E%A7%E5%88%B6/" rel="bookmark" title="RBAC--权限控制">RBAC--权限控制</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/ECharts-%E6%95%B0%E6%8D%AE%E5%8F%AF%E8%A7%86%E5%8C%96%E5%BA%93/" rel="bookmark" title="ECharts--数据可视化库">ECharts--数据可视化库</a></li><li><a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/WebSocket-%E5%85%A8%E5%8F%8C%E5%B7%A5%E9%80%9A%E4%BF%A1%E7%9A%84%E5%8D%8F%E8%AE%AE/" rel="bookmark" title="WebSocket--全双工通信协议">WebSocket--全双工通信协议</a></li>
+          <li><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis/" rel="bookmark" title="初步了解--Redis">初步了解--Redis</a></li><li class="active"><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5/" rel="bookmark" title="Redis--主从同步">Redis--主从同步</a></li><li><a href="/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E7%BC%93%E5%AD%98%E9%9B%AA%E5%B4%A9-%E5%87%BB%E7%A9%BF-%E7%A9%BF%E9%80%8F/" rel="bookmark" title="Redis--缓存雪崩,击穿,穿透">Redis--缓存雪崩,击穿,穿透</a></li>
         </ul>
       </div>
       <div class="overview panel" data-title="概要">
@@ -368,12 +413,12 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
 
   <ul id="quick">
     <li class="prev pjax">
-        <a href="/Django%E6%A1%86%E6%9E%B6/Django-%E7%94%9F%E4%BA%A7%E7%8E%AF%E5%A2%83%E9%83%A8%E7%BD%B2/" rel="prev" title="前の記事"><i class="ic i-chevron-left"></i></a>
+        <a href="/%E5%B7%A5%E5%85%B7/NavicatPremium15%E5%AE%89%E8%A3%85%E6%BF%80%E6%B4%BB/" rel="prev" title="前の記事"><i class="ic i-chevron-left"></i></a>
     </li>
     <li class="up"><i class="ic i-arrow-up"></i></li>
     <li class="down"><i class="ic i-arrow-down"></i></li>
     <li class="next pjax">
-        <a href="/Python/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/" rel="next" title="次の記事"><i class="ic i-chevron-right"></i></a>
+        <a href="/%E6%8A%80%E6%9C%AF%E5%A4%A7%E6%9D%82%E7%83%A9/SQL-%E4%B8%80%E5%88%87%E7%9A%86%E5%85%B3%E7%B3%BB/" rel="next" title="次の記事"><i class="ic i-chevron-right"></i></a>
     </li>
     <li class="percent"></li>
   </ul>
@@ -422,7 +467,7 @@ Docker_Desktop 使用 Mysql、Redis - 技术大杂烩 |
   </div>
 <script data-config type="text/javascript">
   var LOCAL = {
-    path: '技术大杂烩/Docker-Desktop使用Mysql、Redis/',
+    path: '数据库/Redis/Redis-主从同步/',
     favicon: {
       show: "星が優しくあふれている",
       hide: "ばかやろう！"

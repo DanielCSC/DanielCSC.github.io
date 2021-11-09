@@ -82,6 +82,78 @@
  ]]></description>
         </item>
         <item>
+            <guid isPermalink="true">https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5/</guid>
+            <title>Redis--主从同步</title>
+            <link>https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis-%E4%B8%BB%E4%BB%8E%E5%90%8C%E6%AD%A5/</link>
+            <category>redis</category>
+            <pubDate>Wed, 04 Nov 2020 21:15:09 +0800</pubDate>
+            <description><![CDATA[ &lt;h1 id=&#34;概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h1&gt;
+&lt;h1 id=&#34;原理&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#原理&#34;&gt;#&lt;/a&gt; 原理&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;Slave 服务启动，主动连接 Master，并发送 &lt;code&gt;SYNC&lt;/code&gt;  命令，请求初始化同步&lt;/li&gt;
+&lt;li&gt;Master 收到 SYNC 后，执行 &lt;code&gt;BGSAVE&lt;/code&gt;  命令生成 RDB 文件，并使用缓冲区记录此后执行的所有写命令&lt;/li&gt;
+&lt;li&gt;Master 完成 RDB 文件后，将其发送给所有 Slave 服务器&lt;/li&gt;
+&lt;li&gt;Slave 服务器接收到 RDB 文件后，删除内存中旧的缓存数据，并装载 RDB 文件&lt;/li&gt;
+&lt;li&gt;Master 在发送完 RDB 后，即刻向所有 Slave 服务器发送缓存中的写命令&lt;/li&gt;
+&lt;li&gt;至此初次连接同步完成，后续进行 &lt;code&gt;增量同步&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;2.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;准备工作win10安装多个redis&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#准备工作win10安装多个redis&#34;&gt;#&lt;/a&gt; 准备工作，Win10 安装多个 redis&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;下载 Redis 免安装版&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;点击&lt;span class=&#34;exturl&#34; data-url=&#34;aHR0cHM6Ly9wYW4uYmFpZHUuY29tL3MvMXhBSHZQRm1nQUhBd1gxT2NHNl96Rmc=&#34;&gt;这里&lt;/span&gt;进行下载&lt;/li&gt;
+&lt;li&gt;&lt;span class=&#34;label primary&#34;&gt;提取码&lt;/span&gt;：byjt&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;将压缩包分别解压到两个文件夹，在 &lt;code&gt;redis.windows.conf&lt;/code&gt;  中修改端口号为： &lt;code&gt;6380与6381&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;img data-src=&#34;1.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;配置主从&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#配置主从&#34;&gt;#&lt;/a&gt; 配置主从&lt;/h1&gt;
+&lt;ol&gt;
+&lt;li&gt;测试环境&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;主服务器：127.0.0.1:6380&lt;/li&gt;
+&lt;li&gt;从服务器：127.0.0.1:6381&lt;/li&gt;
+&lt;li&gt;Redis 版本： 3.2&lt;/li&gt;
+&lt;li&gt;系统：Win10&lt;/li&gt;
+&lt;/ul&gt;
+&lt;ol start=&#34;2&#34;&gt;
+&lt;li&gt;Redis Slaveof 命令&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;通过下面的命令，可以将当前服务器转变为指定服务器的从服务器&lt;/li&gt;
+&lt;li&gt;如果当前服务器已经是某个主服务器的从服务器，那么会让当前服务器停止对旧主服务器的同步，丢弃旧数据集，转而开始对新主服务器进行同步&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;slaveof host port&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;另外，对一个从服务器执行下面的命令，会使这个从服务器关闭复制功能，并将从服务器转变回主服务器，原来同步所得的数据集不会被丢弃&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;利用 &lt;code&gt;不会丢弃同步所得数据集这个特性&lt;/code&gt; ，可以在主服务器失败的时候，将从服务器用作新的主服务器，从而实现无间断运行&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;slaveof no one&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;ol start=&#34;3&#34;&gt;
+&lt;li&gt;启动 &lt;code&gt;Slave&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;redis-server --port 6381	#	启动服务器&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td data-num=&#34;2&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;redis-cli -p 6381		#	启动客户端&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;3.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;ol start=&#34;4&#34;&gt;
+&lt;li&gt;开启数据同步&lt;/li&gt;
+&lt;/ol&gt;
+&lt;ul&gt;
+&lt;li&gt;在 &lt;code&gt;Slave&lt;/code&gt;  的客户端输入下面命令&lt;/li&gt;
+&lt;/ul&gt;
+&lt;figure class=&#34;highlight markdown&#34;&gt;&lt;figcaption data-lang=&#34;markdown&#34;&gt;&lt;/figcaption&gt;&lt;table&gt;&lt;tr&gt;&lt;td data-num=&#34;1&#34;&gt;&lt;/td&gt;&lt;td&gt;&lt;pre&gt;slaveof 127.0.0.1 6380		#	 设置主从，6380是Master，6381是Slave&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;p&gt;&lt;img data-src=&#34;5.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+&lt;h1 id=&#34;测试&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#测试&#34;&gt;#&lt;/a&gt; 测试&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;由图可见，已经完成主从同步🤞&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;img data-src=&#34;6.png&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+ ]]></description>
+        </item>
+        <item>
             <guid isPermalink="true">https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis/</guid>
             <title>初步了解--Redis</title>
             <link>https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/Redis/Redis/</link>
