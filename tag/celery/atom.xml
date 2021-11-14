@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mfx.icu</id>
+    <id>https://danielblog.cn</id>
     <title>The course of true love never did run smooth. • Posts by &#34;celery&#34; tag</title>
-    <link href="https://mfx.icu" />
+    <link href="https://danielblog.cn" />
     <updated>2020-11-20T08:18:25.000Z</updated>
     <category term="Celery" />
     <category term="JWT" />
@@ -25,9 +25,9 @@
     <category term="Docker" />
     <category term="redis" />
     <entry>
-        <id>https://mfx.icu/Django%E6%A1%86%E6%9E%B6/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/</id>
+        <id>https://danielblog.cn/Django%E6%A1%86%E6%9E%B6/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/</id>
         <title>Celery异步框架</title>
-        <link rel="alternate" href="https://mfx.icu/Django%E6%A1%86%E6%9E%B6/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/"/>
+        <link rel="alternate" href="https://danielblog.cn/Django%E6%A1%86%E6%9E%B6/Django-Celery%E5%BC%82%E6%AD%A5%E6%A1%86%E6%9E%B6/"/>
         <content type="html">&lt;h2 id=&#34;celery异步框架&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#celery异步框架&#34;&gt;#&lt;/a&gt; Celery 异步框架&lt;/h2&gt;
 &lt;h3 id=&#34;介绍&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#介绍&#34;&gt;#&lt;/a&gt; 介绍&lt;/h3&gt;
 &lt;blockquote&gt;

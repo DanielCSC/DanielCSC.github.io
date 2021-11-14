@@ -2,9 +2,9 @@
 <rss version="2.0">
     <channel>
         <title>The course of true love never did run smooth. • Posts by &#34;python&#34; category</title>
-        <link>https://mfx.icu</link>
+        <link>https://danielblog.cn</link>
         <description>人生海海  山山而川  不过尔尔</description>
-        <language>ja</language>
+        <language>zh</language>
         <pubDate>Wed, 16 Dec 2020 21:14:18 +0800</pubDate>
         <lastBuildDate>Wed, 16 Dec 2020 21:14:18 +0800</lastBuildDate>
         <category>Celery</category>
@@ -28,9 +28,9 @@
         <category>Docker</category>
         <category>redis</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/Python/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</guid>
+            <guid isPermalink="true">https://danielblog.cn/Python/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</guid>
             <title>垃圾回收机制</title>
-            <link>https://mfx.icu/Python/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</link>
+            <link>https://danielblog.cn/Python/Python-%E5%9E%83%E5%9C%BE%E5%9B%9E%E6%94%B6%E6%9C%BA%E5%88%B6/</link>
             <pubDate>Wed, 16 Dec 2020 21:14:18 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;引用计数&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#引用计数&#34;&gt;#&lt;/a&gt; 引用计数&lt;/h1&gt;
 &lt;blockquote&gt;

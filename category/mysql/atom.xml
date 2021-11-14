@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://mfx.icu</id>
+    <id>https://danielblog.cn</id>
     <title>The course of true love never did run smooth. • Posts by &#34;mysql&#34; category</title>
-    <link href="https://mfx.icu" />
+    <link href="https://danielblog.cn" />
     <updated>2020-08-30T13:43:14.000Z</updated>
     <category term="Celery" />
     <category term="JWT" />
@@ -25,9 +25,9 @@
     <category term="Docker" />
     <category term="redis" />
     <entry>
-        <id>https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</id>
+        <id>https://danielblog.cn/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/</id>
         <title>MySQL主从同步</title>
-        <link rel="alternate" href="https://mfx.icu/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/"/>
+        <link rel="alternate" href="https://danielblog.cn/%E6%95%B0%E6%8D%AE%E5%BA%93/MySQL/MySQL%E4%B8%BB%E4%BB%8E%E7%83%AD%E5%A4%87/"/>
         <content type="html">&lt;h1 id=&#34;概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h1&gt;
 &lt;blockquote&gt;
 &lt;p&gt;MySQL 是现在普遍使用的数据库，但是如果宕机了必然会造成数据丢失。为了保证 MySQL 数据库的可靠性，就要会一些提高可靠性的技术。MySQL 主从同步可以做到实时备份数据。&lt;/p&gt;

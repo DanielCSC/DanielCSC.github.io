@@ -2,9 +2,9 @@
 <rss version="2.0">
     <channel>
         <title>The course of true love never did run smooth. • Posts by &#34;paypal&#34; tag</title>
-        <link>https://mfx.icu</link>
+        <link>https://danielblog.cn</link>
         <description>人生海海  山山而川  不过尔尔</description>
-        <language>ja</language>
+        <language>zh</language>
         <pubDate>Sat, 26 Dec 2020 14:47:25 +0800</pubDate>
         <lastBuildDate>Sat, 26 Dec 2020 14:47:25 +0800</lastBuildDate>
         <category>Celery</category>
@@ -28,9 +28,9 @@
         <category>Docker</category>
         <category>redis</category>
         <item>
-            <guid isPermalink="true">https://mfx.icu/Django%E6%A1%86%E6%9E%B6/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</guid>
+            <guid isPermalink="true">https://danielblog.cn/Django%E6%A1%86%E6%9E%B6/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</guid>
             <title>PayPal--跨境支付</title>
-            <link>https://mfx.icu/Django%E6%A1%86%E6%9E%B6/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</link>
+            <link>https://danielblog.cn/Django%E6%A1%86%E6%9E%B6/PayPal-%E8%B7%A8%E5%A2%83%E6%94%AF%E4%BB%98/</link>
             <category>PayPal</category>
             <pubDate>Sat, 26 Dec 2020 14:47:25 +0800</pubDate>
             <description><![CDATA[ &lt;h1 id=&#34;概述&#34;&gt;&lt;a class=&#34;markdownIt-Anchor&#34; href=&#34;#概述&#34;&gt;#&lt;/a&gt; 概述&lt;/h1&gt;
